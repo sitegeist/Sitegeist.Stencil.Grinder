@@ -1,0 +1,12 @@
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    'Sitegeist.Stencil.Grinder:PublicFrontendAccess':
+      matcher: 'method(Sitegeist\Stencil\Grinder\Application\Controller\GrinderController->showAction())'
+
+roles:
+
+  'Neos.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Sitegeist.Stencil.Grinder:PublicFrontendAccess'
+        permission: GRANT

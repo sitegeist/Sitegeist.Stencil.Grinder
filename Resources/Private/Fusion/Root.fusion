@@ -1,0 +1,90 @@
+prototype(Sitegeist.Stencil.Grinder:Document) < prototype(Neos.Fusion:Component) {
+    root = Sitegeist.Stencil.Grinder:DocumentCase
+
+    renderer = Neos.Fusion:Case {
+        shortcut {
+            condition = ${q(node).is('[instanceof Neos.Neos:Shortcut]')}
+            renderer = Sitegeist.Stencil.Grinder:Command {
+                directive = 'REDIRECT'
+                options {
+                    target = Neos.Neos:NodeUri
+                    status = 301
+                }
+            }
+        }
+
+        default {
+            @position = 'end 99999999'
+            condition = true
+            renderer = Neos.Fusion:DataStructure {
+                type = 'Sitegeist.Stencil.Grinder/v1/DOCUMENT'
+                payload = Sitegeist.Stencil.Grinder:DocumentCase
+            }
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:Node) < prototype(Neos.Fusion:Component) {
+    component = ''
+    props = Neos.Fusion:DataStructure
+
+    renderer = Neos.Fusion:DataStructure {
+        type = 'Sitegeist.Stencil.Grinder/v1/NODE'
+        payload = Neos.Fusion:DataStructure {
+            component = ${props.component}
+            props = ${props.props}
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:Command) < prototype(Neos.Fusion:Component) {
+    directive = ''
+    options = Neos.Fusion:DataStructure
+
+    renderer = Neos.Fusion:DataStructure {
+        type = 'Sitegeist.Stencil.Grinder/v1/COMMAND'
+        payload = Neos.Fusion:DataStructure {
+            directive = ${props.directive}
+            options = ${props.options}
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:DocumentCase) < prototype(Neos.Fusion:Case) {
+    default {
+        @position = 'end 99999999'
+        condition = true
+        type = ${documentNode.nodeType.name}
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:ContentCase) < prototype(Neos.Fusion:Case) {
+    default {
+        @position = 'end 99999999'
+        condition = true
+        type = ${node.nodeType.name}
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:ContentCollection) < prototype(Neos.Fusion:Component) {
+    node = ${node}
+    nodePath = ''
+
+    renderer = Neos.Fusion:Map {
+        items = Neos.Fusion:Case {
+            withNodePath {
+                condition = ${!String.isBlank(props.nodePath)}
+                renderer = ${q(props.node).children(props.nodePath).children().get()}
+            }
+
+            withoutNodePath {
+                condition = ${String.isBlank(props.nodePath)}
+                renderer = ${q(props.node).children().get()}
+            }
+        }
+        itemName = 'node'
+        itemRenderer = Sitegeist.Stencil.Grinder:ContentCase
+    }
+}
+
+grinder = Sitegeist.Stencil.Grinder:Document

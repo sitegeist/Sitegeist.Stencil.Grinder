@@ -1,0 +1,8 @@
+'Vendor.Site:Content.Image':
+  ui:
+    icon: fas fa-image
+    label: Image
+  superTypes:
+    'Vendor.Site:Content': true
+    'Vendor.Site:Constraint.Content.Main': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true

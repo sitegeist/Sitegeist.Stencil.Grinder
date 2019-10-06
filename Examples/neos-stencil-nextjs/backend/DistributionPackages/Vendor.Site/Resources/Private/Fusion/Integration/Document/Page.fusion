@@ -1,0 +1,30 @@
+prototype(Vendor.Site:Document.Page) < prototype(Neos.Fusion:Component) {
+    renderer = Sitegeist.Stencil.Grinder:Node {
+        component = 'Vendor.Site:Document.Page'
+        props {
+            label = ${node.label}
+            title = ${node.properties.title}
+            navigation = Sitegeist.Stencil.Grinder:Node {
+                component = 'Vendor.Site:Navigation'
+                props.items = Neos.Fusion:Map {
+                    items = ${q(site).children('[instanceof Neos.Neos:Document]').get()}
+                    itemRenderer = Neos.Fusion:DataStructure {
+                        label = ${item.properties.title}
+                        // href = Neos.Fusion:UriBuilder {
+                        //     package = 'Neos.Neos'
+                        //     controller = 'Frontend\\Node'
+                        //     action = 'show'
+                        //     arguments.node = ${item}
+                        // }
+                        href = Neos.Neos:NodeUri {
+                            node = ${item}
+                        }
+                    }
+                }
+            }
+            children = Sitegeist.Stencil.Grinder:ContentCollection {
+                nodePath = 'main'
+            }
+        }
+    }
+}

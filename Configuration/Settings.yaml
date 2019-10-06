@@ -1,0 +1,14 @@
+Neos:
+
+  Flow:
+    mvc:
+      routes:
+        'Sitegeist.Stencil.Grinder':
+          position: 'before Neos.Neos'
+
+  Neos:
+    fusion:
+      autoInclude:
+        Sitegeist.Stencil.Grinder: true
+    userInterface:
+      defaultEditPreviewMode: stencil

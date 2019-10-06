@@ -1,0 +1,8 @@
+prototype(Vendor.Site:Content.Text) < prototype(Neos.Fusion:Component) {
+    renderer = Sitegeist.Stencil.Grinder:Node {
+        component = 'Vendor.Site:Content.Text'
+        props {
+            text = ${node.properties.text}
+        }
+    }
+}

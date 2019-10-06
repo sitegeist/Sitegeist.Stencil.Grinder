@@ -1,0 +1,27 @@
+-
+  name:  'Frontend/Homepage'
+  uriPattern: 'stencil.grinder{node}'
+  defaults:
+    '@package':    'Sitegeist.Stencil.Grinder'
+    '@subpackage': 'Application'
+    '@controller': 'Grinder'
+    '@action':     'show'
+  routeParts:
+    'node':
+      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+      options:
+        onlyMatchSiteNodes: true
+  appendExceedingArguments: true
+
+-
+  name:  'Frontend/Page'
+  uriPattern: 'stencil.grinder/{node}'
+  defaults:
+    '@package':    'Sitegeist.Stencil.Grinder'
+    '@subpackage': 'Application'
+    '@controller': 'Grinder'
+    '@action':     'show'
+  routeParts:
+    'node':
+      handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
+  appendExceedingArguments: true

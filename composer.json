@@ -1,0 +1,20 @@
+
+{
+    "description": "Json rendering for headless Neos",
+    "type": "neos-package",
+    "name": "sitegeist/stencil-grinder",
+    "require": {
+        "neos/neos": "^4.3 || ^5.0 || dev-master"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Sitegeist\\Stencil\\Grinder\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sitegeist.Stencil.Grinder"
+        }
+    }
+}

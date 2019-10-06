@@ -1,0 +1,17 @@
+'Vendor.Site:Content.Text':
+  ui:
+    icon: fas fa-align-left
+    label: Text
+  superTypes:
+    'Vendor.Site:Content': true
+    'Vendor.Site:Constraint.Content.Main': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            formatting:
+              left: true
+              right: true
+              center: true
