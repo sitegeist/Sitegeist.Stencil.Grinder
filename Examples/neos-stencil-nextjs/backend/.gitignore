@@ -36,6 +36,7 @@ DistributionPackages/*/Resources/Public/Styles/
 
 .idea
 .vscode
+.editorconfig
 
 custom.makefile
 docker-compose.override.y*ml
