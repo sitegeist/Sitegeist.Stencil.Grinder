@@ -14,7 +14,7 @@ app.prepare().then(() => {
 
 
 	server.all('*', async (req, res, next) => {
-		const response = await fetch('http://webserver:8081/stencil.grinder' + req.path.replace('.html', ''));
+		const response = await fetch(`http://webserver:${process.env.PORT}/stencil.grinder${req.path.replace('.html', '')}`);
 
 		if (response.ok) {
 			const data = await response.json();

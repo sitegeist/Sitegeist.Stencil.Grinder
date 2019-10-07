@@ -19,6 +19,7 @@ export TS_NODE_PROJECT=./tsconfig.json
 export HOST_USER=$(shell id -u)
 export HOST_GROUP=$(shell id -g)
 export EXAMPLE := neos-stencil-nextjs
+export PORT := 8081
 
 COMPOSE=docker-compose -f ./Examples/$(EXAMPLE)/docker-compose.yaml
 COMPOSE_EXEC=$(COMPOSE) exec -T --user $(HOST_USER)

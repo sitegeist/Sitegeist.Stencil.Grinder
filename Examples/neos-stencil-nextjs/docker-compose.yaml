@@ -7,10 +7,9 @@ services:
       - --api.insecure=true
       - --providers.docker=true
       - --providers.docker.exposedbydefault=false
-      - --entrypoints.web.address=:8081
+      - --entrypoints.web.address=:${PORT}
     ports:
-      - "8081:8081"
-      - "8080:8080"
+      - "${PORT}:${PORT}"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
@@ -29,7 +28,7 @@ services:
     image: sitegeist/neos-nginx:latest
     working_dir: /project/dist
     environment:
-      - PORT_NGINX=8081
+      - PORT_NGINX=${PORT}
       - PROJECT_ROOT=/project/dist
       - PHP_FPM_HOST=backend
       - PHP_FPM_PORT=9000
@@ -43,7 +42,7 @@ services:
       - traefik.http.routers.backend.priority=20
       - traefik.http.routers.backend.entrypoints=web
       - traefik.http.routers.backend.service=backend
-      - traefik.http.services.backend.loadbalancer.server.port=8081
+      - traefik.http.services.backend.loadbalancer.server.port=${PORT}
 
   backend:
     image: sitegeist/neos-php-fpm:latest
@@ -62,7 +61,7 @@ services:
     user: ${HOST_USER}:82
     command: sh -c 'yarn && yarn dev'
     environment:
-      - PORT=8081
+      - PORT=${PORT}
     volumes:
       - ./frontend:/project/dist
       - ..:/project/lib
@@ -72,4 +71,4 @@ services:
       - traefik.http.routers.frontend.priority=10
       - traefik.http.routers.frontend.entrypoints=web
       - traefik.http.routers.frontend.service=frontend
-      - traefik.http.services.frontend.loadbalancer.server.port=8081
+      - traefik.http.services.frontend.loadbalancer.server.port=${PORT}

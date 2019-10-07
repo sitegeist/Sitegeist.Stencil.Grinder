@@ -8,7 +8,7 @@ prototype(Vendor.Site:Content.Image) < prototype(Neos.Fusion:Component) {
                 //
                 // We cannot generate relative resource URIs yet
                 //
-                @process.makeRelative = ${String.replace(value, 'http://webserver:8081', '')}
+                @process.makeRelative = ${String.pregReplace(value, '/http:\/\/webserver:[0-9]+/', '')}
             }
             title = ${q(node).property('title')}
             alt = ${q(node).property('alt')}
