@@ -50,6 +50,18 @@ prototype(Sitegeist.Stencil.Grinder:Command) < prototype(Neos.Fusion:Component) 
     }
 }
 
+//
+// We cannot generate relative resource URIs via Neos yet, so here's a hack
+//
+prototype(Sitegeist.Stencil.Grinder:ImageUri) < prototype(Neos.Fusion:Component) {
+    relative = false
+    renderer = Neos.Neos:ImageUri {
+        @apply.props = ${props}
+        @process.makeRelative = ${String.pregReplace(value, '/http:\/\/[a-zA-Z0-9\-\.\:]+\//u', '/')}
+        @process.makeRelative.@if.enabled = ${props.relative}
+    }
+}
+
 prototype(Sitegeist.Stencil.Grinder:DocumentCase) < prototype(Neos.Fusion:Case) {
     default {
         @position = 'end 99999999'

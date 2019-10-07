@@ -2,13 +2,9 @@ prototype(Vendor.Site:Content.Image) < prototype(Neos.Fusion:Component) {
     renderer = Sitegeist.Stencil.Grinder:Node {
         component = 'Vendor.Site:Content.Image'
         props {
-            src = Neos.Neos:ImageUri {
+            src = Sitegeist.Stencil.Grinder:ImageUri {
                 asset = ${q(node).property('image')}
-
-                //
-                // We cannot generate relative resource URIs yet
-                //
-                @process.makeRelative = ${String.pregReplace(value, '/http:\/\/webserver:[0-9]+/', '')}
+                relative = true
             }
             title = ${q(node).property('title')}
             alt = ${q(node).property('alt')}
