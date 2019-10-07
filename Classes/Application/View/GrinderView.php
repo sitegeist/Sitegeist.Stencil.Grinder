@@ -18,6 +18,8 @@ use Neos\Flow\I18n\Service as I18nService;
 use Neos\Flow\Mvc\View\AbstractView;
 use Neos\Neos\Domain\Service\FusionService;
 use Neos\Fusion\Core\Runtime;
+use Neos\Fusion\Exception\RuntimeException as FusionRuntimeException;
+use Neos\Flow\Exception as FlowException;
 
 class GrinderView extends AbstractView
 {
@@ -72,14 +74,28 @@ class GrinderView extends AbstractView
             return json_encode($output);
         } catch (\Error $error) {
             return json_encode([
-                'type' => 'Sitegeist.Stencil.Grinder/v1/Error',
+                'type' => 'Sitegeist.Stencil.Grinder/v1/ERROR',
                 'payload' => [
                     'message' => $error->getMessage()
                 ]
             ]);
+        } catch (FusionRuntimeException $exception) {
+            return json_encode([
+                'type' => 'Sitegeist.Stencil.Grinder/v1/EXCEPTION',
+                'payload' => [
+                    'message' => $exception->getMessage(),
+                    'fusionPath' => $exception->getFusionPath(),
+                    'previous' => [
+                        'type' => 'Sitegeist.Stencil.Grinder/v1/EXCEPTION',
+                        'payload' => [
+                            'message' => $exception->getPrevious()->getMessage()
+                        ]
+                    ]
+                ]
+            ]);
         } catch (\Exception $exception) {
             return json_encode([
-                'type' => 'Sitegeist.Stencil.Grinder/v1/Exception',
+                'type' => 'Sitegeist.Stencil.Grinder/v1/EXCEPTION',
                 'payload' => [
                     'code' => $exception->getCode(),
                     'message' => $exception->getMessage()
