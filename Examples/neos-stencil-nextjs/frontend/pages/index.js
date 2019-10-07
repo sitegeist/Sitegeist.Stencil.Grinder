@@ -9,6 +9,7 @@ import '../components/Page';
 import '../components/Text';
 import '../components/Image';
 import '../components/Navigation';
+import '../components/Gallery';
 
 export default class extends React.Component {
 	static getInitialProps({ query }) {

@@ -41,7 +41,7 @@
        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-06T18:35:13+00:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-06T18:35:13+00:00</lastPublicationDateTime>
        <properties>
-        <image __type="object" __identifier="9859b6ec-63e1-4cff-b78b-3b31bef1b7b7" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;9859b6ec-63e1-4cff-b78b-3b31bef1b7b7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;fa361dd7-7cff-41f3-9bb5-7677a40d2f15&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bay-beach-beautiful-2071518.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;c371dd32b42c6dc546379eb9cf78071da4112e4f&quot;,&quot;hash&quot;:&quot;c371dd32b42c6dc546379eb9cf78071da4112e4f&quot;,&quot;__identity&quot;:&quot;e7d684cd-3b07-4e93-ab9e-4724c0cb88ca&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:1775,&quot;position&quot;:10,&quot;width&quot;:3157,&quot;x&quot;:1639,&quot;y&quot;:599,&quot;__identity&quot;:&quot;5547b96e-4fe5-479d-bfa6-50e06c1bf7fa&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+        <image __type="object" __identifier="9859b6ec-63e1-4cff-b78b-3b31bef1b7b7" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;9859b6ec-63e1-4cff-b78b-3b31bef1b7b7&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;fa361dd7-7cff-41f3-9bb5-7677a40d2f15&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;bay-beach-beautiful-2071518.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;c371dd32b42c6dc546379eb9cf78071da4112e4f&quot;,&quot;hash&quot;:&quot;c371dd32b42c6dc546379eb9cf78071da4112e4f&quot;,&quot;__identity&quot;:&quot;e7d684cd-3b07-4e93-ab9e-4724c0cb88ca&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:1775,&quot;position&quot;:10,&quot;width&quot;:3157,&quot;x&quot;:1639,&quot;y&quot;:599,&quot;__identity&quot;:&quot;424be71e-1ae1-4ab0-b426-c0ddb80f2be3&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
        </properties>
       </variant>
      </node>
@@ -120,6 +120,55 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-06T18:51:46+00:00</lastPublicationDateTime>
        <properties/>
       </variant>
+      <node identifier="30f16395-3b67-4926-96d1-5702e09bce51" nodeName="node-3zfhgyrxcy99f">
+       <variant sortingIndex="50" workspace="live" nodeType="Vendor.Site:Content.Gallery" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-07T11:31:17+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-07T14:40:58+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-07T14:40:58+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="d9f77ccd-f923-4085-84de-2d606d38cc94" nodeName="node-ekuf5ehtpnvfk">
+        <variant sortingIndex="300" workspace="live" nodeType="Vendor.Site:Content.Gallery.Item" version="6" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-07T11:32:07+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;This is the caption for gallery item #3&lt;/p&gt;</text>
+          <image __type="object" __identifier="341bad74-a5d8-40b2-8dfa-823e4869a8e4" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;341bad74-a5d8-40b2-8dfa-823e4869a8e4&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;fccaaef2-c3c1-4278-9942-6ac8f974fee5&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;animal-antelope-barbaric-469676.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;7b3aa4ee0d1318880ac348a66301292199761ab8&quot;,&quot;hash&quot;:&quot;7b3aa4ee0d1318880ac348a66301292199761ab8&quot;,&quot;__identity&quot;:&quot;2aaf1858-367d-45d5-ba97-a59f5d1d0e43&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:720,&quot;position&quot;:10,&quot;width&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;bd46f6a0-bc25-45bb-84be-02624077696f&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="86bc22d9-cdef-445f-8ac7-99730fccb63d" nodeName="node-knspc1ls57oox">
+        <variant sortingIndex="200" workspace="live" nodeType="Vendor.Site:Content.Gallery.Item" version="6" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-07T11:32:02+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;This is the caption for gallery item #2&lt;/p&gt;</text>
+          <image __type="object" __identifier="f5babc26-052a-4f68-9aae-2f911e9eb984" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;f5babc26-052a-4f68-9aae-2f911e9eb984&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;381c7abd-eab3-40c0-a68b-f4b3bfd02b40&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;dark-daylight-eerie-1165982.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;059aecec3da10a38f41be3897bf58f814fb4a249&quot;,&quot;hash&quot;:&quot;059aecec3da10a38f41be3897bf58f814fb4a249&quot;,&quot;__identity&quot;:&quot;5f0bce23-8822-4201-ae69-8df848850889&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:720,&quot;position&quot;:10,&quot;width&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:132,&quot;__identity&quot;:&quot;79cefa0d-d9ee-4549-8cca-1df70a432f9c&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="b7ad6f4a-98cf-4d3d-a2b6-c1f4b6f0e2a8" nodeName="node-vtkehlv57fl32">
+        <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.Gallery.Item" version="12" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-07T11:31:24+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-07T14:05:42+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;This is the caption for gallery item #1&lt;/p&gt;</text>
+          <image __type="object" __identifier="3f802960-cadb-43d1-807f-a7abac096001" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;3f802960-cadb-43d1-807f-a7abac096001&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;b5c31669-c0b0-420d-8180-cf41b5270ea0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;beautiful-blur-bright-326055.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;5c3647a029bbdcadd9c4f0df7b481f5aa0f6695f&quot;,&quot;hash&quot;:&quot;5c3647a029bbdcadd9c4f0df7b481f5aa0f6695f&quot;,&quot;__identity&quot;:&quot;aeb67338-9d05-40d8-99a0-b2188e7d9022&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:719,&quot;position&quot;:10,&quot;width&quot;:1280,&quot;x&quot;:0,&quot;y&quot;:0,&quot;__identity&quot;:&quot;600e179a-22f4-4608-b8b6-bce80baca3a0&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+         </properties>
+        </variant>
+       </node>
+      </node>
       <node identifier="331050b5-2f0f-43f0-b852-6a12a69f50b5" nodeName="node-l6sp6vz3m7092">
        <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.Text" version="6" removed="" hidden="" hiddenInIndex="">
         <dimensions/>

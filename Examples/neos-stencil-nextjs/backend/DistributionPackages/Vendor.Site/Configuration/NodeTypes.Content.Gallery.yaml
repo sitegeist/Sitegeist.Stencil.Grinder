@@ -1,0 +1,21 @@
+'Vendor.Site:Content.Gallery':
+  ui:
+    icon: fas fa-images
+    label: Gallery
+  superTypes:
+    'Vendor.Site:Content': true
+    'Vendor.Site:Constraint.Content.Main': true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Vendor.Site:Content': false
+      'Vendor.Site:Content.Gallery.Item': true
+
+'Vendor.Site:Content.Gallery.Item':
+  ui:
+    icon: fas fa-image
+    label: Gallery Item
+  superTypes:
+    'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
