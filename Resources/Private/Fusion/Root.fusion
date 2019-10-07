@@ -63,18 +63,115 @@ prototype(Sitegeist.Stencil.Grinder:ImageUri) < prototype(Neos.Fusion:Component)
 }
 
 prototype(Sitegeist.Stencil.Grinder:DocumentCase) < prototype(Neos.Fusion:Case) {
+    prototypeForDocumentNodeExists {
+        @position = 'end 99999998'
+        condition = Neos.Fusion:CanRender {
+            type = ${documentNode.nodeType.name}
+        }
+        type = ${documentNode.nodeType.name}
+    }
+
     default {
         @position = 'end 99999999'
         condition = true
-        type = ${documentNode.nodeType.name}
+        renderer = Sitegeist.Stencil.Grinder:DefaultContent {
+            node = ${documentNode}
+        }
     }
 }
 
 prototype(Sitegeist.Stencil.Grinder:ContentCase) < prototype(Neos.Fusion:Case) {
+    prototypeForContentNodeExists {
+        @position = 'end 99999998'
+        condition = Neos.Fusion:CanRender {
+            type = ${node.nodeType.name}
+        }
+        type = ${node.nodeType.name}
+    }
+
     default {
         @position = 'end 99999999'
         condition = true
-        type = ${node.nodeType.name}
+        renderer = Sitegeist.Stencil.Grinder:DefaultContent {
+            node = ${node}
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:DefaultProperties)  < prototype(Neos.Fusion:Component) {
+    node = ${node}
+    renderer = Neos.Fusion:Map {
+        items = ${props.node.nodeType.properties}
+        items.@process.excludeMetaProperties = ${Array.filter(value, (_, key) => !String.startsWith(key, '_'))}
+
+        itemRenderer= Neos.Fusion:Case {
+            isImage {
+                condition = ${item.type == 'Neos\\Media\\Domain\\Model\\ImageInterface'}
+                renderer = Sitegeist.Stencil.Grinder:ImageUri {
+                    asset = ${q(props.node).property(itemKey)}
+                    relative = true
+                }
+            }
+
+            default {
+                @position = 'end 99999999'
+                condition = true
+                renderer = ${q(props.node).property(itemKey)}
+            }
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:DefaultChildren)  < prototype(Neos.Fusion:Component) {
+    node = ${node}
+    renderer = Neos.Fusion:Map {
+        items = ${q(props.node).children('[instanceof Neos.Neos:Content],[instanceof Neos.Neos:ContentCollection]').get()}
+        itemName = 'node'
+        itemRenderer = Neos.Fusion:DataStructure {
+            key = ${node.autocreated ? node.name : 'children'}
+            value = Neos.Fusion:Case {
+                collection {
+                    @position = 10
+                    condition = ${q(node).is('[instanceof Neos.Neos:ContentCollection]')}
+                    renderer = Sitegeist.Stencil.Grinder:ContentCollection
+                }
+                content {
+                    @position = 20
+                    condition = ${q(node).is('[instanceof Neos.Neos:Content]')}
+                    renderer = Sitegeist.Stencil.Grinder:ContentCase
+                }
+            }
+        }
+
+        @process.reduce = Neos.Fusion:Reduce {
+            items = ${value}
+            initialValue = ${{}}
+            itemReducer = Neos.Fusion:Case {
+                add {
+                    condition = ${!carry[item.key]}
+                    renderer = ${Array.set(carry, item.key, item.value)}
+                }
+                append {
+                    condition = ${carry[item.key] != null}
+                    renderer = ${Array.set(carry, item.key, Array.concat(carry[item.key].type ? [carry[item.key]] : carry[item.key], [item.value]))}
+                }
+            }
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:DefaultContent) < prototype(Neos.Fusion:Component) {
+    node = ${node}
+    renderer = Sitegeist.Stencil.Grinder:Node {
+        component = ${props.node.nodeType.name}
+        props {
+            @apply.properties = Sitegeist.Stencil.Grinder:DefaultProperties {
+                node = ${props.node}
+            }
+            @apply.children = Sitegeist.Stencil.Grinder:DefaultChildren {
+                node = ${props.node}
+            }
+        }
     }
 }
 
