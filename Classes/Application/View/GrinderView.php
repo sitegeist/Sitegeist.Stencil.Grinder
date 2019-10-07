@@ -81,8 +81,8 @@ class GrinderView extends AbstractView
             return json_encode([
                 'type' => 'Sitegeist.Stencil.Grinder/v1/Exception',
                 'payload' => [
-                    'code' => $$error->getCode(),
-                    'message' => $$error->getMessage()
+                    'code' => $exception->getCode(),
+                    'message' => $exception->getMessage()
                 ]
             ]);
         }
