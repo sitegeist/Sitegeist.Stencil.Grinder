@@ -43,6 +43,9 @@ down::
 	@$(COMPOSE) down --remove-orphans --volumes
 	@$(COMPOSE) rm -vsf
 
+save::
+	@$(COMPOSE_EXEC) backend php -d memory_limit=-1 ./flow site:export --package-key Vendor.Site
+
 restart::
 	@$(MAKE) -s down
 	@$(MAKE) -s run
