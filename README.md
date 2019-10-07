@@ -1,4 +1,4 @@
-# Sitegeist.Stencil.Roller
+# Sitegeist.Stencil.Grinder
 
 > This package will allow you to provide a JSON API to any rendering service in the frontend, while retaining a fusion-based integration workflow.
 
