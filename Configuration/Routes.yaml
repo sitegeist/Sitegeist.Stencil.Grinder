@@ -35,3 +35,13 @@
     'node':
       handler:     'Neos\Neos\Routing\FrontendNodeRoutePartHandlerInterface'
   appendExceedingArguments: true
+
+-
+  name:  'Frontend/Node'
+  uriPattern: 'stencil.grinder/node'
+  defaults:
+    '@package':    'Sitegeist.Stencil.Grinder'
+    '@subpackage': 'Application'
+    '@controller': 'Grinder'
+    '@action':     'node'
+  appendExceedingArguments: true

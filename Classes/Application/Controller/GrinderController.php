@@ -182,5 +182,67 @@ class GrinderController extends ActionController
         //
         $this->view->setFusionPath('grinder');
     }
+
+    /**
+     * @param string $identifier
+     * @param string $site
+     * @param string $workspace
+     * @param array $dimensions
+     * @return void
+     */
+    public function nodeAction(string $identifier, string $site = '', string $workspace = 'live', array $dimensions = []): void
+    {
+        //
+        // Get site
+        //
+        if ($site && ($site = $this->siteRepository->findOneByNodeName($site))) {
+            $site = $site;
+        } elseif ($domain = $this->domainRepository->findOneByActiveRequest()) {
+            $site = $domain->getSite();
+        } elseif ($site = $this->siteRepository->findDefault()) {
+            $site = $site;
+        } else {
+            throw new \NodeNotFoundException('Could not find site.', 1571322200);
+        }
+
+        // Get contentContext
+        $context = $this->createContentContext('live', $site, $dimensions);
+
+        //
+        // Get node
+        //
+        $node = $context->getNodeByIdentifier($identifier);
+
+        //
+        // Get document node
+        //
+        $documentNode = $node;
+        while ($documentNode !== null && !$documentNode->getNodeType()->isOfType('Neos.Neos:Document')) {
+            $documentNode = $documentNode->findParentNode();
+        }
+
+        //
+        // Get site node
+        //
+        $siteNode = $node->getContext()->getCurrentSiteNode();
+
+        //
+        // Set header
+        //
+        $this->response->setContentType('application/x-sitegeist.stencil.grinder+json;version=v1');
+
+        //
+        // Assign variables to view
+        //
+        $this->view->assignMultiple([
+            'node' => $node,
+            'documentNode' => $documentNode,
+            'site' => $siteNode
+        ]);
+
+        //
+        // Set fusion path
+        //
+        $this->view->setFusionPath('grinder-node');
     }
 }

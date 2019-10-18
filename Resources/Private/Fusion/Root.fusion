@@ -229,3 +229,4 @@ prototype(Sitegeist.Stencil.Grinder:IndexEntry) < prototype(Neos.Fusion:Componen
 
 grinder = Sitegeist.Stencil.Grinder:Document
 grinder-index = Sitegeist.Stencil.Grinder:Index
+grinder-node = Sitegeist.Stencil.Grinder:ContentCase
