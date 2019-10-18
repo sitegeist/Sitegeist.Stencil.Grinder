@@ -1,4 +1,14 @@
 -
+  name:  'Frontend/Index'
+  uriPattern: 'stencil.grinder/index'
+  defaults:
+    '@package':    'Sitegeist.Stencil.Grinder'
+    '@subpackage': 'Application'
+    '@controller': 'Grinder'
+    '@action':     'index'
+  appendExceedingArguments: true
+
+-
   name:  'Frontend/RootDocument'
   uriPattern: 'stencil.grinder/document{node}'
   defaults:

@@ -196,4 +196,36 @@ prototype(Sitegeist.Stencil.Grinder:ContentCollection) < prototype(Neos.Fusion:C
     }
 }
 
+prototype(Sitegeist.Stencil.Grinder:Index) < prototype(Neos.Fusion:Component) {
+    entries = ${indexEntries}
+
+    renderer = Neos.Fusion:DataStructure {
+        type = 'Sitegeist.Stencil.Grinder/v1/INDEX'
+        count = ${Array.length(props.entries)}
+        payload = Neos.Fusion:Map {
+            items = ${props.entries}
+            itemName = 'entry'
+            itemRenderer = Sitegeist.Stencil.Grinder:IndexEntry
+        }
+    }
+}
+
+prototype(Sitegeist.Stencil.Grinder:IndexEntry) < prototype(Neos.Fusion:Component) {
+    entry = ${entry}
+
+    renderer = Neos.Fusion:DataStructure {
+        type = 'Sitegeist.Stencil.Grinder/v1/INDEXENTRY'
+        payload = Neos.Fusion:DataStructure {
+            url = Neos.Fusion:UriBuilder {
+                package = 'Sitegeist.Stencil.Grinder'
+                subpackage = 'Application'
+                controller = 'Grinder'
+                action = 'document'
+                arguments.node = ${props.entry}
+            }
+        }
+    }
+}
+
 grinder = Sitegeist.Stencil.Grinder:Document
+grinder-index = Sitegeist.Stencil.Grinder:Index
