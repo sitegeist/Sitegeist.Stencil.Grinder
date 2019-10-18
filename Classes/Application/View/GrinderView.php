@@ -41,6 +41,15 @@ class GrinderView extends AbstractView
     protected $fusionPath = 'grinder';
 
     /**
+     * @param string $fusionPath
+     * @return void
+     */
+    public function setFusionPath(string $fusionPath): void
+    {
+        $this->fusionPath = $fusionPath;
+    }
+
+    /**
      * Renders the view
      *
      * @return string The rendered view

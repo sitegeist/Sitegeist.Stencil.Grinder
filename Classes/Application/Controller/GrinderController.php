@@ -37,7 +37,7 @@ class GrinderController extends ActionController
      * @param NodeInterface $node
      * @return void
      */
-    public function showAction(NodeInterface $node): void
+    public function documentAction(NodeInterface $node): void
     {
         //
         // Get document node
@@ -65,5 +65,11 @@ class GrinderController extends ActionController
             'documentNode' => $documentNode,
             'site' => $siteNode
         ]);
+
+        //
+        // Set fusion path
+        //
+        $this->view->setFusionPath('grinder');
+    }
     }
 }
