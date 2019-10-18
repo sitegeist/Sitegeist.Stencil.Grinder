@@ -2,7 +2,7 @@ module.exports = {
 	transform: {
 		'^.+\\.tsx?$': 'ts-jest'
 	},
-	testMatch: ['<rootDir>/DistributionPackages/*/Resources/Private/Fusion/**/*.spec.ts'],
+	testMatch: ['<rootDir>/JavaScript/**/*.spec.ts'],
 	moduleFileExtensions: [
 		'ts',
 		'tsx',
@@ -10,8 +10,5 @@ module.exports = {
 		'jsx',
 		'json',
 		'node'
-	],
-	modulePathIgnorePatterns: [
-		'<rootDir>/Packages/'
 	]
 };

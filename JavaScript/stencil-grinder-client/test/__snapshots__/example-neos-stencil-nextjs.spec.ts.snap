@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`example: neos-stencil-nextjs should be able to fetch a document 1`] = `
+Object {
+  "payload": Object {
+    "payload": Object {
+      "component": "Vendor.Site:Document.Page",
+      "props": Object {
+        "children": Array [
+          Object {
+            "payload": Object {
+              "component": "Vendor.Site:Content.Gallery",
+              "props": Object {
+                "children": Array [
+                  Object {
+                    "payload": Object {
+                      "component": "Vendor.Site:Content.Gallery.Item",
+                      "props": Object {
+                        "alternativeText": null,
+                        "image": "/_Resources/Persistent/3/6/f/d/36fda749728c5bf909b18b5740ecd3e0db7d2967/beautiful-blur-bright-326055-1280x719.jpg",
+                        "text": "<p>This is the caption for gallery item #1</p>",
+                        "title": null,
+                      },
+                    },
+                    "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+                  },
+                  Object {
+                    "payload": Object {
+                      "component": "Vendor.Site:Content.Gallery.Item",
+                      "props": Object {
+                        "alternativeText": null,
+                        "image": "/_Resources/Persistent/b/e/1/a/be1a776223d742c8e6eb44d1f68e6ed4d5b15753/dark-daylight-eerie-1165982-1280x720.jpg",
+                        "text": "<p>This is the caption for gallery item #2</p>",
+                        "title": null,
+                      },
+                    },
+                    "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+                  },
+                  Object {
+                    "payload": Object {
+                      "component": "Vendor.Site:Content.Gallery.Item",
+                      "props": Object {
+                        "alternativeText": null,
+                        "image": "/_Resources/Persistent/0/2/4/6/024650ba26f22f4c45340e656e07a2db963c1707/animal-antelope-barbaric-469676-1280x720.jpg",
+                        "text": "<p>This is the caption for gallery item #3</p>",
+                        "title": null,
+                      },
+                    },
+                    "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+                  },
+                ],
+              },
+            },
+            "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+          },
+          Object {
+            "payload": Object {
+              "component": "Vendor.Site:Content.Text",
+              "props": Object {
+                "text": "<h1>Lorem Ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel elit lobortis, porttitor est nec, viverra nisi. Maecenas condimentum mollis velit, id finibus sapien maximus at. Nam mattis gravida pharetra. Aliquam eu commodo turpis, non porttitor turpis. Nullam rutrum eget ex vel euismod. Nam vel mi lacus. Vivamus sit amet congue augue.</p><p>Integer eu est non nisi dictum dignissim quis id eros. Aliquam erat volutpat. Etiam tincidunt, ipsum non bibendum aliquet, quam mauris tempus quam, vel hendrerit massa orci et tellus. Etiam fermentum non nibh sit amet dignissim. Cras pretium augue id eros accumsan suscipit. Donec ullamcorper justo arcu, et malesuada massa rhoncus eu. Sed lacus dolor, mattis eu massa sed, porttitor varius felis. Vestibulum mattis ex non tempus pretium. Sed ultrices luctus facilisis. In dignissim nisi sit amet rutrum elementum.</p><p>Donec erat orci, facilisis quis facilisis vel, finibus eu nisl. Aliquam in aliquam nulla, in rutrum risus. Fusce vel sodales mauris. Phasellus iaculis erat sagittis tempor pellentesque. Nullam ac sapien ante. Nulla sit amet dui arcu. Nunc sed elementum justo. Quisque suscipit urna sed euismod tempus.</p><p>Ut nec diam faucibus, facilisis sapien in, scelerisque sem. Etiam pharetra ultricies sapien ac volutpat. Ut pharetra a leo at tempus. Sed finibus ut ipsum eget iaculis. Nullam in maximus neque, non hendrerit purus. Donec pharetra est et lacus congue, ut dignissim mauris finibus. Duis felis lorem, suscipit ac nunc vel, aliquam venenatis odio. Aliquam fermentum velit est, vel fringilla ligula malesuada at. Suspendisse molestie, quam non varius auctor, ante lacus mollis ligula, et viverra turpis risus et ante. Quisque nec nunc suscipit velit convallis gravida. Mauris quis posuere turpis, luctus vestibulum quam. Sed pulvinar est nec augue accumsan lobortis. Donec id libero sed nulla facilisis gravida sit amet accumsan nulla. Duis a dui nec metus laoreet congue vitae ut erat. Suspendisse arcu ligula, vulputate vitae pretium vitae, volutpat non leo. Maecenas ut odio ultricies, blandit tortor at, luctus metus.</p><p>Sed dui dui, luctus sed pulvinar vitae, ornare sit amet nunc. Suspendisse varius, arcu vel congue maximus, diam orci placerat enim, ut porttitor ligula mauris sit amet sem. Vestibulum suscipit mattis ultrices. Suspendisse venenatis vel enim id luctus. Vestibulum in rhoncus quam, quis egestas leo. Aenean dictum id ex et scelerisque. Ut tincidunt velit sed varius gravida. Etiam dui dolor, posuere nec ipsum ut, lacinia ullamcorper augue. Maecenas in augue luctus, sagittis enim ac, pellentesque augue. Suspendisse nibh nisl, feugiat sit amet velit id, pellentesque laoreet sem. Fusce vitae ultricies urna.</p>",
+              },
+            },
+            "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+          },
+        ],
+        "label": "Example #2",
+        "navigation": Object {
+          "payload": Object {
+            "component": "Vendor.Site:Navigation",
+            "props": Object {
+              "items": Array [
+                Object {
+                  "href": "/example-1.html",
+                  "label": "Example #1",
+                },
+                Object {
+                  "href": "/example-2.html",
+                  "label": "Example #2",
+                },
+                Object {
+                  "href": "/example-3.html",
+                  "label": "Example #3",
+                },
+                Object {
+                  "href": "https://sitegeist.de",
+                  "label": "Shortcut",
+                },
+              ],
+            },
+          },
+          "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+        },
+        "title": "Example #2",
+      },
+    },
+    "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+  },
+  "type": "Sitegeist.Stencil.Grinder/v1/DOCUMENT",
+}
+`;
+
+exports[`example: neos-stencil-nextjs should be able to fetch a node 1`] = `
+Object {
+  "payload": Object {
+    "component": "Vendor.Site:Collection.Content.Main",
+    "props": Object {
+      "children": Array [
+        Object {
+          "payload": Object {
+            "component": "Vendor.Site:Content.Text",
+            "props": Object {
+              "text": "<h1>Sitegeist.Stencil.Grinder</h1>",
+            },
+          },
+          "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+        },
+        Object {
+          "payload": Object {
+            "component": "Vendor.Site:Content.Image",
+            "props": Object {
+              "alt": null,
+              "src": "/_Resources/Persistent/5/0/e/5/50e514a3aabb7f66fc841a1d6111483c787c9114/bay-beach-beautiful-2071518-3157x1775-2560x1439.jpg",
+              "title": null,
+            },
+          },
+          "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+        },
+        Object {
+          "payload": Object {
+            "component": "Vendor.Site:Content.Text",
+            "props": Object {
+              "text": "<p>This package will allow you to provide a JSON API to any rendering service in the frontend, while retaining a fusion-based integration workflow.</p>",
+            },
+          },
+          "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+        },
+      ],
+    },
+  },
+  "type": "Sitegeist.Stencil.Grinder/v1/NODE",
+}
+`;
+
+exports[`example: neos-stencil-nextjs should be able to fetch the index 1`] = `
+Object {
+  "count": 4,
+  "payload": Array [
+    Object {
+      "payload": Object {
+        "url": "/stencil.grinder/document/example-1",
+      },
+      "type": "Sitegeist.Stencil.Grinder/v1/INDEXENTRY",
+    },
+    Object {
+      "payload": Object {
+        "url": "/stencil.grinder/document/example-2",
+      },
+      "type": "Sitegeist.Stencil.Grinder/v1/INDEXENTRY",
+    },
+    Object {
+      "payload": Object {
+        "url": "/stencil.grinder/document/example-3",
+      },
+      "type": "Sitegeist.Stencil.Grinder/v1/INDEXENTRY",
+    },
+    Object {
+      "payload": Object {
+        "url": "/stencil.grinder/document/shortcut",
+      },
+      "type": "Sitegeist.Stencil.Grinder/v1/INDEXENTRY",
+    },
+  ],
+  "type": "Sitegeist.Stencil.Grinder/v1/INDEX",
+}
+`;

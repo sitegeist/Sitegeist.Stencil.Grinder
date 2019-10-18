@@ -77,7 +77,7 @@ class GrinderClient {
 
 		if (this.configuration.defaultUriSuffix) {
 			if (path.endsWith(this.configuration.defaultUriSuffix)) {
-				path = path.substr(0, -this.configuration.defaultUriSuffix.length);
+				path = path.slice(0, -this.configuration.defaultUriSuffix.length);
 			}
 		}
 

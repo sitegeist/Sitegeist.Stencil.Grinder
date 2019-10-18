@@ -15,11 +15,13 @@
 ###############################################################################
 SHELL=/bin/bash
 
-export TS_NODE_PROJECT=./tsconfig.json
-export HOST_USER=$(shell id -u)
-export HOST_GROUP=$(shell id -g)
+export PATH := ./node_modules/.bin:$(PATH)
+export TS_NODE_PROJECT := ./tsconfig.json
+export HOST_USER := $(shell id -u)
+export HOST_GROUP := $(shell id -g)
 export EXAMPLE := neos-stencil-nextjs
 export PORT := 8081
+export container := backend
 
 COMPOSE=docker-compose -f ./Examples/$(EXAMPLE)/docker-compose.yaml
 COMPOSE_EXEC=$(COMPOSE) exec -T --user $(HOST_USER)
@@ -29,6 +31,8 @@ COMPOSE_EXEC_ROOT=$(COMPOSE) exec -T --user root
 #                                   RUN                                       #
 ###############################################################################
 run::
+	@yarn && lerna bootstrap
+	@$(MAKE) -s build
 	@$(COMPOSE) up -d --force-recreate
 	@$(COMPOSE_EXEC) backend composer install
 	@$(COMPOSE_EXEC) backend mkdir -p /project/dist/Data/DoctrineMigrations
@@ -46,9 +50,12 @@ down::
 save::
 	@$(COMPOSE_EXEC) backend php -d memory_limit=-1 ./flow site:export --package-key Vendor.Site
 
-restart::
+reset::
 	@$(MAKE) -s down
 	@$(MAKE) -s run
+
+restart::
+	@$(COMPOSE) restart $(container)
 
 logs::
 	@$(COMPOSE) logs -f $(container)
@@ -57,4 +64,16 @@ ps::
 	@$(COMPOSE) ps
 
 ssh::
-	@$(COMPOSE) exec --user $(HOST_USER) backend bash
+	@$(COMPOSE) exec --user $(HOST_USER) $(container) bash
+
+###############################################################################
+#                                  BUILD                                      #
+###############################################################################
+build::
+	@yarn && lerna run build
+
+###############################################################################
+#                                   TEST                                      #
+###############################################################################
+test::
+	@jest

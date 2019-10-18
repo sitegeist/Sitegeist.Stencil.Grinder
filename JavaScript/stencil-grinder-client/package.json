@@ -1,9 +1,14 @@
 {
   "name": "@sitegeist/stencil-grinder-client",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
   "peerDependencies": {
     "isomorphic-fetch": "^2.2.1"
   },
-  "typings": "./index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "dependencies": {
     "urijs": "^1.19.1"
   },

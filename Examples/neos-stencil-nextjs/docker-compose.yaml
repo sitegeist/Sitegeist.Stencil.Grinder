@@ -64,7 +64,7 @@ services:
       - PORT=${PORT}
     volumes:
       - ./frontend:/project/dist
-      - ..:/project/lib
+      - ../..:/project/lib
     labels:
       - traefik.enable=true
       - traefik.http.routers.frontend.rule=PathPrefix(`/`)
