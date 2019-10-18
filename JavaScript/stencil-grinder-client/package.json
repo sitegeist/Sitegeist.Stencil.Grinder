@@ -1,0 +1,15 @@
+{
+  "name": "@sitegeist/stencil-grinder-client",
+  "peerDependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "typings": "./index.d.ts",
+  "dependencies": {
+    "urijs": "^1.19.1"
+  },
+  "devDependencies": {
+    "@types/urijs": "^1.19.4",
+    "isomorphic-fetch": "^2.2.1",
+    "typescript": "^3.6.4"
+  }
+}
