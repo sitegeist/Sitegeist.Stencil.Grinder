@@ -10,6 +10,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "dependencies": {
+    "@sitegeist/stencil-grinder-shared": "^1.0.0",
     "urijs": "^1.19.1"
   },
   "devDependencies": {

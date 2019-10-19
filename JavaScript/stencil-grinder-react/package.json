@@ -1,0 +1,21 @@
+{
+  "name": "@sitegeist/stencil-grinder-react",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "dependencies": {
+    "@sitegeist/stencil-grinder-shared": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
+  }
+}

@@ -57,14 +57,13 @@ services:
 
   frontend:
     image: node:10
-    working_dir: /project/dist
+    working_dir: /project/Examples/neos-stencil-nextjs/frontend
     user: ${HOST_USER}:82
-    command: sh -c 'yarn && yarn dev'
+    command: sh -c 'yarn dev'
     environment:
       - PORT=${PORT}
     volumes:
-      - ./frontend:/project/dist
-      - ../..:/project/lib
+      - ../..:/project
     labels:
       - traefik.enable=true
       - traefik.http.routers.frontend.rule=PathPrefix(`/`)

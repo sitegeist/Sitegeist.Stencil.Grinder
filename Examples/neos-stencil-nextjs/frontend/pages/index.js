@@ -3,7 +3,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
 
-import { Grinder } from '../src/client';
+import { Grinder } from '@sitegeist/stencil-grinder-react';
 
 import '../components/Page';
 import '../components/Text';

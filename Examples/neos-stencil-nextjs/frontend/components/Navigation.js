@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Grinder, register } from '../src/client';
+import { Grinder, register } from '@sitegeist/stencil-grinder-react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grinder, register } from '../src/client';
+import { register } from '@sitegeist/stencil-grinder-react';
 
 
 export default register('Vendor.Site:Content.Image', function Image({ src, alt, title }) {

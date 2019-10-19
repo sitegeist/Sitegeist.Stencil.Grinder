@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
-import {Grinder, register} from '../src/client';
+import {register} from '@sitegeist/stencil-grinder-react';
 
 import 'react-image-gallery/styles/css/image-gallery.css';
 

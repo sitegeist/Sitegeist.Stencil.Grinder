@@ -1,5 +1,12 @@
 import URI from 'urijs';
 
+import {
+	GrinderDocument,
+	GrinderCommand,
+	GrinderNode,
+	GrinderDocumentIndex
+} from "@sitegeist/stencil-grinder-shared";
+
 /**
  * This file is part of the Sitegeist.Stencil.Grinder package
  *
@@ -16,35 +23,6 @@ interface GrinderClientConfiguration {
 	defaultUriSuffix?: string
 }
 
-interface GrinderDocument {
-	type: 'Sitegeist.Stencil.Grinder/v1/DOCUMENT'
-	payload: GrinderNode
-}
-
-interface GrinderCommand {
-	type: 'Sitegeist.Stencil.Grinder/v1/COMMAND'
-	payload: {
-		directive: string
-		options: object
-	}
-}
-
-interface GrinderNode {
-	type: 'Sitegeist.Stencil.Grinder/v1/NODE'
-	payload: {
-		component: string
-		props: object
-	}
-}
-
-interface GrinderDocumentIndex {
-	type: 'Sitegeist.Stencil.Grinder/v1/INDEX'
-	payload: GrinderDocumentIndexEntry[]
-}
-
-interface GrinderDocumentIndexEntry {
-	url: string
-}
 
 interface GrinderContentContext {
 	workspace: string
