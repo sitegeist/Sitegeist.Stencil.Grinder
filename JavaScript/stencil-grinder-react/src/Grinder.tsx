@@ -14,8 +14,10 @@ import { get } from "./register";
  * source code.
  */
 
+type GrinderData = GrinderResponse | { key: any, [key: string]: any } | object | number | string | null;
+
 interface GrinderProps {
-    data: GrinderResponse | object | any[] | string
+	data: GrinderData | GrinderData[]
 }
 
 /**
@@ -23,13 +25,19 @@ interface GrinderProps {
  * @param GrinderProps props
  * @return JSX.Element[] | undefined
  */
-export default function Grinder(props: GrinderProps) {
+export default function Grinder(props: GrinderProps): JSX.Element | null {
 	if (Array.isArray(props.data)) {
 		return (
 			<>
-				{props.data.map((item, index) => (
-					<Grinder key={item.key || index} data={item}/>
-				))}
+				{props.data.map((item, index) => {
+					if (item !== null && typeof item === 'object') {
+						return (
+							<Grinder key={'key' in item ? item.key : index} data={item} />
+						);
+					}
+
+					return item;
+				})}
 			</>
 		);
 	}
@@ -43,7 +51,9 @@ export default function Grinder(props: GrinderProps) {
 				throw new Error(`[Grinder]: Cannot render command "${props.data.payload.directive}". Please make sure to handle commands before rendering.`);
 
 			case 'Sitegeist.Stencil.Grinder/v1/DOCUMENT':
-				return (<Grinder data={props.data.payload}/>);
+				return (
+					<Grinder data={props.data.payload}/>
+				);
 
 			case 'Sitegeist.Stencil.Grinder/v1/NODE': {
 				const Component = get(props.data.payload.component);
@@ -59,5 +69,17 @@ export default function Grinder(props: GrinderProps) {
 		}
 	}
 
-	throw new Error(`[Grinder]: Could not unravel data structue: ${JSON.stringify(props.data)}.`);
+	if (typeof props.data === 'string') {
+		return (<>{props.data}</>);
+	}
+
+	if (typeof props.data === 'number') {
+		return (<>props.data</>);
+	}
+
+	if (props.data === null) {
+		return null;
+	}
+
+	throw new Error(`[Grinder]: Could not unravel data structure: ${JSON.stringify(props.data)}.`);
 }

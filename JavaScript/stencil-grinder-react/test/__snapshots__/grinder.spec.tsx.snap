@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grinder Should render a document 1`] = `
+<div>
+  <header>
+    HEADER
+  </header>
+  <div>
+    Foo
+  </div>
+  <footer>
+    FOOTER
+  </footer>
+</div>
+`;
+
+exports[`Grinder Should render a node 1`] = `
+<div>
+  Foo
+</div>
+`;
+
+exports[`Grinder Should render an array of nodes 1`] = `
+Array [
+  <div>
+    Foo
+  </div>,
+  <div>
+    Bar
+  </div>,
+]
+`;
+
+exports[`Grinder should pass through arrays of null 1`] = `null`;
+
+exports[`Grinder should pass through arrays of numbers 1`] = `
+Array [
+  "12",
+  "34",
+]
+`;
+
+exports[`Grinder should pass through arrays of strings 1`] = `
+Array [
+  "Foo",
+  "Bar",
+]
+`;
+
+exports[`Grinder should pass through null 1`] = `null`;
+
+exports[`Grinder should pass through numbers 1`] = `"props.data"`;
+
+exports[`Grinder should pass through strings 1`] = `"Foo"`;
+
+exports[`Grinder should throw, if attempted to render a command 1`] = `"[Grinder]: Cannot render command \\"REDIRECT\\". Please make sure to handle commands before rendering."`;
+
+exports[`Grinder should throw, if attempted to render an index 1`] = `"[Grinder]: Cannot render index. The index is not supposed to be rendered."`;
+
+exports[`Grinder should throw, if attempted to render anything else 1`] = `"[Grinder]: Could not unravel data structure: {\\"foo\\":\\"bar\\"}."`;
+
+exports[`Grinder should throw, if attempted to render anything else 2`] = `"[Grinder]: Could not unravel data structure: {\\"foo\\":\\"bar\\"}."`;
