@@ -1,0 +1,26 @@
+Neos:
+  Flow:
+    persistence:
+      backendOptions:
+        host: 'database'
+        dbname: 'example'
+        user: 'example'
+        password: 'example'
+    resource:
+      targets:
+        localWebDirectoryPersistentResourcesTarget:
+          targetOptions:
+
+            # split published urls into folters to avoid
+            # running into fs folder limits
+            subdivideHashPathSegment: true
+
+            # use relative links to allow putting of
+            # Web/_Resources/Persistent into the shared
+            # folder for faster deployments
+            relativeSymlinks: true
+  Imagine:
+    driver: Imagick
+  Neos:
+    userInterface:
+      defaultEditPreviewMode: stencil

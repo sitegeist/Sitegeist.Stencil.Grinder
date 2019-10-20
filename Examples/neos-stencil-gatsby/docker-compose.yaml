@@ -1,0 +1,75 @@
+version: '3.6'
+services:
+  traefik:
+    image: "traefik:v2.0.0-rc3"
+    command:
+      - --log.level=DEBUG
+      - --api.insecure=true
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:${PORT}
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+  database:
+    image: sitegeist/neos-mariadb:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=example
+      - MYSQL_USER=example
+      - MYSQL_PASSWORD=example
+    tmpfs:
+    - /run/mysqld:uid=999,gid=999
+    - /tmp
+
+  webserver:
+    image: sitegeist/neos-nginx:latest
+    working_dir: /project/dist
+    environment:
+      - PORT_NGINX=${PORT}
+      - PROJECT_ROOT=/project/dist
+      - PHP_FPM_HOST=backend
+      - PHP_FPM_PORT=9000
+      - FLOW_CONTEXT=Development/Docker
+    volumes:
+      - ./backend:/project/dist
+      - ../..:/project/lib
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.backend.rule=PathPrefix(`/neos`) || PathPrefix(`/_Resources`) || PathPrefix(`/stencil.grinder`) || HeadersRegexp(`Referer`, `.*neos\/content.*`)
+      - traefik.http.routers.backend.priority=20
+      - traefik.http.routers.backend.entrypoints=web
+      - traefik.http.routers.backend.service=backend
+      - traefik.http.services.backend.loadbalancer.server.port=${PORT}
+
+  backend:
+    image: sitegeist/neos-php-fpm:latest
+    working_dir: /project/dist
+    user: ${HOST_USER}:82
+    environment:
+      - FLOW_CONTEXT=Development/Docker
+      - FLOW_PATH_DATA=/data/neos
+    volumes:
+      - ./backend:/project/dist
+      - ../..:/project/lib
+
+  frontend:
+    image: node:10
+    working_dir: /project/Examples/neos-stencil-gatsby/frontend
+    user: ${HOST_USER}:82
+    command: sh -c 'yarn develop'
+    environment:
+      - PORT=${PORT}
+    ports:
+      - "${PORT}"
+    volumes:
+      - ../..:/project
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.frontend.rule=PathPrefix(`/`)
+      - traefik.http.routers.frontend.priority=10
+      - traefik.http.routers.frontend.entrypoints=web
+      - traefik.http.routers.frontend.service=frontend
+      - traefik.http.services.frontend.loadbalancer.server.port=${PORT}

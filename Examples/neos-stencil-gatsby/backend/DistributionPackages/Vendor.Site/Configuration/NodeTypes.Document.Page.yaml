@@ -1,0 +1,21 @@
+'Vendor.Site:Document.Page':
+  superTypes:
+    'Vendor.Site:Document': true
+
+  ui:
+    icon: fas fa-file
+    label: i18n
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Document': false
+      'Neos.Neos:Shortcut': true
+      'Vendor.Site:Document': true
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+      constraints:
+        nodeTypes:
+          '*': false
+          'Vendor.Site:Content': true

@@ -1,0 +1,20 @@
+{
+    "name": "vendor/site",
+    "type": "neos-site",
+    "version": "1.0.0",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes-basemixins": "*",
+        "sitegeist/stencil-grinder": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Site\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Vendor.Site"
+        }
+    }
+}

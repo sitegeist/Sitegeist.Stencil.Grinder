@@ -1,0 +1,51 @@
+{
+    "name": "sitegeist/stencil-grinder-test-distribution",
+    "description": "Sitegeist.Stencil.Grinder Test Distribution",
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin",
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "require": {
+        "neos/neos": "^5.0",
+        "neos/neos-ui": "^5.0",
+        "neos/nodetypes": "^5.0",
+        "vendor/site": "^1.0",
+        "sitegeist/stencil": "@dev",
+        "sitegeist/stencil-grinder": "*"
+    },
+    "require-dev": {
+        "neos/buildessentials": "^6.0",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^8.1",
+        "symfony/css-selector": "~2.0",
+        "neos/behat": "@dev"
+    },
+    "suggest": {
+        "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
+    },
+    "scripts": {
+        "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "./DistributionPackages/*"
+        },
+        "lib": {
+            "type": "path",
+            "url": "../lib"
+        },
+        "stencil": {
+            "type": "vcs",
+            "url": "git@github.com:sitegeist/Sitegeist.Stencil.git"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
