@@ -1,7 +1,8 @@
 {
   "packages": [
     "JavaScript/*",
-    "Examples/neos-stencil-nextjs/frontend"
+    "Examples/neos-stencil-nextjs/frontend",
+    "Examples/neos-stencil-gatsby/frontend"
   ],
   "version": "0.0.0",
   "npmClient": "yarn"

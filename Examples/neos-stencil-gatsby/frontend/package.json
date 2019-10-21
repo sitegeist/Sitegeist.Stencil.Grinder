@@ -13,7 +13,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@sitegeist/stencil-grinder-client": "^1.0.0",
+    "@sitegeist/stencil-grinder-react": "^1.0.0",
     "gatsby": "^2.16.1",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },

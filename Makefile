@@ -19,9 +19,9 @@ export PATH := ./node_modules/.bin:$(PATH)
 export TS_NODE_PROJECT := ./tsconfig.json
 export HOST_USER := $(shell id -u)
 export HOST_GROUP := $(shell id -g)
-export EXAMPLE := neos-stencil-nextjs
+export EXAMPLE ?= neos-stencil-nextjs
 export PORT := 8081
-export container := backend
+export CONTAINER ?= backend
 
 COMPOSE=docker-compose -f ./Examples/$(EXAMPLE)/docker-compose.yaml
 COMPOSE_EXEC=$(COMPOSE) exec -T --user $(HOST_USER)
@@ -55,25 +55,29 @@ reset::
 	@$(MAKE) -s run
 
 restart::
-	@$(COMPOSE) restart $(container)
+	@$(COMPOSE) restart $(CONTAINER)
 
 logs::
-	@$(COMPOSE) logs -f $(container)
+	@$(COMPOSE) logs -f $(CONTAINER)
 
 ps::
 	@$(COMPOSE) ps
 
 ssh::
-	@$(COMPOSE) exec --user $(HOST_USER) $(container) bash
+	@$(COMPOSE) exec --user $(HOST_USER) $(CONTAINER) bash
 
 ###############################################################################
 #                                  BUILD                                      #
 ###############################################################################
 build::
-	@yarn && lerna run build
+	@yarn && lerna run --scope @sitegeist/* build
 
 ###############################################################################
 #                                   TEST                                      #
 ###############################################################################
 test::
 	@jest $(args)
+
+env::
+	@printf "\44EXAMPLE: $$EXAMPLE\n"
+	@printf "\44CONTAINER: $$CONTAINER\n"

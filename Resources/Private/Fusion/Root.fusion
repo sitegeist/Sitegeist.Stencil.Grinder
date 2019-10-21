@@ -216,12 +216,8 @@ prototype(Sitegeist.Stencil.Grinder:IndexEntry) < prototype(Neos.Fusion:Componen
     renderer = Neos.Fusion:DataStructure {
         type = 'Sitegeist.Stencil.Grinder/v1/INDEXENTRY'
         payload = Neos.Fusion:DataStructure {
-            url = Neos.Fusion:UriBuilder {
-                package = 'Sitegeist.Stencil.Grinder'
-                subpackage = 'Application'
-                controller = 'Grinder'
-                action = 'document'
-                arguments.node = ${props.entry}
+            url = Neos.Neos:NodeUri {
+                node = ${props.entry}
             }
         }
     }

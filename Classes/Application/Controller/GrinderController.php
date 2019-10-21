@@ -121,7 +121,7 @@ class GrinderController extends ActionController
         $indexEntries = [];
         foreach ($siteNodes as $siteNode) {
             $q = new FlowQuery([$siteNode]);
-            $indexEntries += $q->find('[instanceof Neos.Neos:Document]' . $filter)->get();
+            $indexEntries += $q->add($q->find('[instanceof Neos.Neos:Document]' . $filter))->get();
         }
 
         //
