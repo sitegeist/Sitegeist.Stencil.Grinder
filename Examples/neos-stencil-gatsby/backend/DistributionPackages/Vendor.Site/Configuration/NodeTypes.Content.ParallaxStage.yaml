@@ -1,0 +1,23 @@
+'Vendor.Site:Content.ParallaxStage':
+  superTypes:
+    'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+  ui:
+    label: 'Parallax Stage'
+  constraints:
+    nodeTypes:
+      '*': false
+      'Vendor.Site:Content.ParallaxStage.Card': true
+  options:
+    template:
+      childNodes:
+        card-1:
+          type: 'Vendor.Site:Content.ParallaxStage.Card'
+
+'Vendor.Site:Content.ParallaxStage.Card':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: 'Card'

@@ -1,0 +1,15 @@
+'Vendor.Site:Content.HeroStage':
+  superTypes:
+    'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: 'Hero Stage'
+  properties:
+    text:
+      ui:
+        inline:
+          editorOptions:
+            formatting:
+              left: true
+              right: true
+              center: true

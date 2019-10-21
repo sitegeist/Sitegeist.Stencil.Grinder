@@ -1,0 +1,25 @@
+'Vendor.Site:Content.ProductStage':
+  superTypes:
+    'Vendor.Site:Content': true
+  ui:
+    label: 'Product Stage'
+  constraints:
+    nodeTypes:
+      '*': false
+      'Vendor.Site:Content.ProductStage.Item': true
+  options:
+    template:
+      childNodes:
+        product-1: &product
+          type: 'Vendor.Site:Content.ProductStage.Item'
+        product-2: *product
+        product-3: *product
+
+
+'Vendor.Site:Content.ProductStage.Item':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: 'Product'

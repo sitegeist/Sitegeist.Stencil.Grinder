@@ -1,0 +1,23 @@
+'Vendor.Site:Content.FaqStage':
+  superTypes:
+    'Vendor.Site:Content': true
+  ui:
+    label: 'F.A.Q. Stage'
+  constraints:
+    nodeTypes:
+      '*': false
+      'Vendor.Site:Content.FaqStage.Item': true
+  options:
+    template:
+      childNodes:
+        faq-1:
+          type: 'Vendor.Site:Content.FaqStage.Item'
+
+
+'Vendor.Site:Content.FaqStage.Item':
+  superTypes:
+    'Neos.Neos:Content': true
+    'Neos.NodeTypes.BaseMixins:TitleMixin': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: 'F.A.Q.'
