@@ -1,39 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <site name="Vendor.Site" state="1" siteResourcesPackageKey="Vendor.Site" siteNodeName="vendor-site">
-        <nodes formatVersion="2.0">
-            <node nodeName="vendor-site">
-                <variant
-                    workspace="live"
-                    nodeType="Vendor.Site:Document.HomePage"
-                    sortingIndex="100"
-                    version="1"
-                    removed=""
-                    hidden=""
-                    hiddenInIndex=""
-                    >
-                    <dimensions/>
-                    <accessRoles __type="array"/>
-                    <properties>
-                        <title __type="string">Vendor.Site</title>
-                        <uriPathSegment __type="string">vendor-site</uriPathSegment>
-                    </properties>
-                </variant>
-                <node nodeName="main">
-                    <variant
-                        workspace="live"
-                        nodeType="Neos.Neos:ContentCollection"
-                        sortingIndex="100"
-                        version="1"
-                        removed=""
-                        hidden=""
-                        hiddenInIndex=""
-                        >
-                        <dimensions/>
-                        <accessRoles __type="array" />
-                    </variant>
-                </node>
-            </node>
-        </nodes>
-    </site>
+ <site name="Vendor.Site" state="1" siteResourcesPackageKey="Vendor.Site" siteNodeName="vendor-site">
+  <nodes formatVersion="2.0">
+   <node identifier="8034bdc7-da0f-41cc-b58d-fb79ddb7a46c" nodeName="vendor-site">
+    <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Document.HomePage" version="1" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</lastModificationDateTime>
+     <properties>
+      <title __type="string">Vendor.Site</title>
+      <uriPathSegment __type="string">vendor-site</uriPathSegment>
+     </properties>
+    </variant>
+    <node identifier="49e082d4-1c6a-4563-ac59-c3b943c3662b" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="94537609-f178-45af-939a-5348bf31c283" nodeName="node-fz8u1k7f8hb32">
+      <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.ProductStage" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:44:58+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="2fb055df-3c0b-4c0b-bb1d-67287728af61" nodeName="node-91czqfur5pwsm">
+       <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.ProductStage.Item" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:45:29+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;&lt;strong&gt;Gatsby&lt;/strong&gt;&lt;/p&gt;</text>
+         <image __type="object" __identifier="5e711a18-4121-45bb-b605-d4ae662c78fe" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;5e711a18-4121-45bb-b605-d4ae662c78fe&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;gatsby-logo.svg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/svg+xml&quot;,&quot;sha1&quot;:&quot;94e3a2fab81d8ce3c250f87793478eae7201c9ff&quot;,&quot;hash&quot;:&quot;94e3a2fab81d8ce3c250f87793478eae7201c9ff&quot;,&quot;__identity&quot;:&quot;6379b1ba-53f8-431d-8b02-e4fade01973b&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="5d3b2490-deef-4f38-8b26-9c9c296be9c1" nodeName="node-ou3jubgnj4pw9">
+       <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.ProductStage.Item" version="7" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:45:03+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:54:45+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-22T18:54:45+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;&lt;strong&gt;Neos&lt;/strong&gt;&lt;/p&gt;</text>
+         <image __type="object" __identifier="8c2c8b44-8dd2-4c77-b955-62e9e67b0825" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;8c2c8b44-8dd2-4c77-b955-62e9e67b0825&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;neos_avatar_primary.png&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/png&quot;,&quot;sha1&quot;:&quot;52bf7595ce3460c41fc41ccaa6f51b0133e7f0bb&quot;,&quot;hash&quot;:&quot;52bf7595ce3460c41fc41ccaa6f51b0133e7f0bb&quot;,&quot;__identity&quot;:&quot;841f6963-51cd-4c11-b84b-c302b3cb2da6&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="b377241e-936a-4632-a60a-116294d9d7e3" nodeName="node-rzr0nm310wru9">
+       <variant sortingIndex="200" workspace="live" nodeType="Vendor.Site:Content.ProductStage.Item" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:45:34+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-22T18:46:09+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;&lt;/p&gt;</text>
+         <image __type="object" __identifier="429f26ee-fa14-4cbf-bb9b-085c35de2ca2" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;429f26ee-fa14-4cbf-bb9b-085c35de2ca2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;react-1-logo-svg-vector.svg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/svg+xml&quot;,&quot;sha1&quot;:&quot;20918a1d50daf208981bf7e0a7fd7429068eca74&quot;,&quot;hash&quot;:&quot;20918a1d50daf208981bf7e0a7fd7429068eca74&quot;,&quot;__identity&quot;:&quot;cdb36dda-c9dc-4d79-9fc6-009b138bc28a&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="2f2747cb-f92c-4f04-afb4-2d61362f859e" nodeName="node-kopproerachsf">
+      <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.HeroStage" version="10" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:28:29+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:42:50+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-22T18:42:50+00:00</lastPublicationDateTime>
+       <properties>
+        <text __type="string">&lt;p&gt;Sitegeist.Stencil + Gatsby Demo Page&lt;/p&gt;</text>
+        <image __type="object" __identifier="caf01ed5-07e5-4bf4-8aba-6c8791d7e854" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;caf01ed5-07e5-4bf4-8aba-6c8791d7e854&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;architecture-buildings-city-220444.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;80bbfc6f8aef5a5bd1e32fbcf5692ec9404a1bbb&quot;,&quot;hash&quot;:&quot;80bbfc6f8aef5a5bd1e32fbcf5692ec9404a1bbb&quot;,&quot;__identity&quot;:&quot;2c9d8422-42e9-46a6-adc1-b25aed0f3be2&quot;}}</image>
+       </properties>
+      </variant>
+     </node>
+    </node>
+   </node>
+  </nodes>
+ </site>
 </root>

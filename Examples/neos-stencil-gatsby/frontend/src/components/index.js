@@ -1,1 +1,2 @@
 import "./documents";
+import "./contents";

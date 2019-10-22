@@ -1,6 +1,7 @@
 'Vendor.Site:Content.HeroStage':
   superTypes:
     'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
     'Neos.NodeTypes.BaseMixins:TextMixin': true
   ui:
     label: 'Hero Stage'
