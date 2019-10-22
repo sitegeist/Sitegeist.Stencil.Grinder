@@ -59,7 +59,7 @@ services:
     image: node:10
     working_dir: /project/Examples/neos-stencil-gatsby/frontend
     user: ${HOST_USER}:82
-    command: sh -c 'yarn develop'
+    command: sh -c 'yarn serve'
     environment:
       - PORT=${PORT}
     ports:

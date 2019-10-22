@@ -11,5 +11,11 @@
     "react-test-renderer": "^16.10.2",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.21",
+    "@mdx-js/react": "^1.5.1",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "theme-ui": "^0.2.44"
   }
 }
