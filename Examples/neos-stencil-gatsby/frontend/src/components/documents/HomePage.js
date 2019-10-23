@@ -18,7 +18,7 @@ function HomePage(props) {
 				<SiteContent>
 					<Grinder data={props.main}/>
 				</SiteContent>
-				<SiteFooter/>
+				<SiteFooter text={props.footerText}/>
 			</StickyContainer>
 		</>
 	);

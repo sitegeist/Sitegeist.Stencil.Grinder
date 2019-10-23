@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Box } from "rebass";
 
-export default function SiteFooter() {
+export default function SiteFooter(props) {
 	return (
 		<Box
 			as="footer"
@@ -21,9 +21,8 @@ export default function SiteFooter() {
 				width={1200}
 				height="100%"
 				mx="auto"
-			>
-				&copy; sitegeist 2019
-			</Flex>
+				dangerouslySetInnerHTML={{ __html: props.text }}
+				/>
 		</Box>
 	);
 }

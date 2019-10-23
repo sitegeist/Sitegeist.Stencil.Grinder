@@ -1,0 +1,8 @@
+prototype(Sitegeist.Stencil.Grinder:DefaultProperties) {
+    renderer.itemRenderer {
+        isFooterText {
+            condition = ${q(props.node).is('[instanceof Vendor.Site:Document.Page]') && itemKey == 'footerText'}
+            renderer = ${q(props.node).property('footerText') || q(props.node).closest('[footerText!=""]').property('footerText')}
+        }
+    }
+}
