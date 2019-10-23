@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Box } from "rebass";
+import { Box } from "rebass";
 
 export default function SiteContent(props) {
 	return (
