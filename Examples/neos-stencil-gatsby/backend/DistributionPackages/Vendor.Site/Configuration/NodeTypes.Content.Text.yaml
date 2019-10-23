@@ -1,0 +1,6 @@
+'Vendor.Site:Content.Text':
+  superTypes:
+    'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:TextMixin': true
+  ui:
+    label: 'Text'

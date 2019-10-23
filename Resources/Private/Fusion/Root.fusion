@@ -216,9 +216,8 @@ prototype(Sitegeist.Stencil.Grinder:IndexEntry) < prototype(Neos.Fusion:Componen
     renderer = Neos.Fusion:DataStructure {
         type = 'Sitegeist.Stencil.Grinder/v1/INDEXENTRY'
         payload = Neos.Fusion:DataStructure {
-            url = Neos.Neos:NodeUri {
-                node = ${props.entry}
-            }
+            url = ${'node://' + props.entry.identifier}
+            url.@process.convert = Neos.Neos:ConvertUris
         }
     }
 }

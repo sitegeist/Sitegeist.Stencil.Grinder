@@ -1,9 +1,6 @@
 'Vendor.Site:Document.HomePage':
   superTypes:
-    'Vendor.Site:Document.Page': true
+    'Vendor.Site:Document.LandingPage': true
   ui:
     icon: globe
-    label: i18n
-  childNodes:
-    notfound:
-      type: Vendor.Site:Document.Error.404
+    label: Home Page

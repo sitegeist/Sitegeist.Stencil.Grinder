@@ -1,1 +1,2 @@
-import "./HomePage";
+import "./LandingPage";
+import "./ContentPage";

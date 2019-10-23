@@ -7,24 +7,11 @@ import SiteHeader from "../elements/SiteHeader";
 import SiteContent from "../elements/SiteContent";
 import SiteFooter from "../elements/SiteFooter";
 
-function HomePage(props) {
-	return (
-		<>
-			<Helmet>
-				<title>{props.title}</title>
-			</Helmet>
-			<StickyContainer>
-				<SiteHeader/>
-				<SiteContent>
-					<Grinder data={props.main}/>
-				</SiteContent>
-				<SiteFooter text={props.footerText}/>
-			</StickyContainer>
-		</>
-	);
+function ContentPage(props) {
+	return (<pre>{JSON.stringify(props, null, 2)}</pre>);
 }
 
 export default register(
-	'Vendor.Site:Document.HomePage',
-	HomePage
+	'Vendor.Site:Document.ContentPage',
+	ContentPage
 );

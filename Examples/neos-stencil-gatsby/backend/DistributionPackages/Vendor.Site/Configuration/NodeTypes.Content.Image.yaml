@@ -1,0 +1,6 @@
+'Vendor.Site:Content.Image':
+  superTypes:
+    'Vendor.Site:Content': true
+    'Neos.NodeTypes.BaseMixins:ImageMixin': true
+  ui:
+    label: 'Image'

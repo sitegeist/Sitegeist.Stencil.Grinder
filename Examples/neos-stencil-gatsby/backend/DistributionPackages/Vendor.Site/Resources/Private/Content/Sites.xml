@@ -3,14 +3,16 @@
  <site name="Vendor.Site" state="1" siteResourcesPackageKey="Vendor.Site" siteNodeName="vendor-site">
   <nodes formatVersion="2.0">
    <node identifier="8034bdc7-da0f-41cc-b58d-fb79ddb7a46c" nodeName="vendor-site">
-    <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Document.HomePage" version="1" removed="" hidden="" hiddenInIndex="">
+    <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Document.HomePage" version="2" removed="" hidden="" hiddenInIndex="">
      <dimensions/>
      <accessRoles __type="array"/>
      <creationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</creationDateTime>
-     <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</lastModificationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:34+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:34+00:00</lastPublicationDateTime>
      <properties>
       <title __type="string">Vendor.Site</title>
       <uriPathSegment __type="string">vendor-site</uriPathSegment>
+      <footerText __type="string">&lt;p&gt;© sitegeist 2019&lt;/p&gt;</footerText>
      </properties>
     </variant>
     <node identifier="49e082d4-1c6a-4563-ac59-c3b943c3662b" nodeName="main">
@@ -207,6 +209,195 @@
         <properties>
          <title __type="string">&lt;h3&gt;Kann man schon was sehen?&lt;/h3&gt;</title>
          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="f336472a-12cf-4d8b-8f91-4c1321ea8052" nodeName="node-9uf50yirhd22u">
+     <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Document.LandingPage" version="4" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:01+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">f-a-q</uriPathSegment>
+       <footerText __type="string"></footerText>
+       <title __type="string">F. A. Q.</title>
+      </properties>
+     </variant>
+     <node identifier="55cdd573-2a34-f427-a6c6-097c18cd8d6e" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:01+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="a4466a13-2c13-4fdd-a0ba-63cfa6339d8a" nodeName="node-4so938kce1ypc">
+       <variant sortingIndex="250" workspace="live" nodeType="Vendor.Site:Content.FaqStage" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h2&gt;Frequently Asked Questions&lt;/h2&gt;</title>
+        </properties>
+       </variant>
+       <node identifier="4ca3136a-9843-462e-81c4-a0b9d2f5f937" nodeName="node-avy7hvsf3tje6">
+        <variant sortingIndex="350" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h3&gt;Wenn ja, warum nicht?&lt;/h3&gt;</title>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="60e3f064-291d-47c4-b4c1-274fbccec77b" nodeName="node-czfweqghg7u7g">
+        <variant sortingIndex="300" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h3&gt;Ist das auch dynamisch und flexibel?&lt;/h3&gt;</title>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="ca5c8724-161a-4a2a-876d-eac514cff3d7" nodeName="node-r9ilv0pcenmz5">
+        <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h3&gt;Was wäre so 'ne grobe Hausnummer?&lt;/h3&gt;</title>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="ba9542e6-a446-47d7-a70e-23f5fdcdc6cc" nodeName="node-y77m1j4kom10m">
+        <variant sortingIndex="250" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h3&gt;Geht das auch im IE11?&lt;/h3&gt;</title>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="24390239-9357-436f-b92a-66a133a3468e" nodeName="node-yo3psri4pw4mo">
+        <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:47+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:51+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">&lt;h3&gt;Kann man schon was sehen?&lt;/h3&gt;</title>
+          <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+      </node>
+      <node identifier="9d902792-9b8d-4586-8a93-d6a68b45cfcd" nodeName="node-kugm2aohip9fd">
+       <variant sortingIndex="125" workspace="live" nodeType="Vendor.Site:Content.HeroStage" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:11+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:40+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:40+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string"></text>
+         <image __type="object" __identifier="ff550d74-5597-4a2b-879c-9c1271d37b13" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;ff550d74-5597-4a2b-879c-9c1271d37b13&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;ask-blackboard-356079.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;2ba1144c38b947fb68ca36d4abd05310cc29cdbb&quot;,&quot;hash&quot;:&quot;2ba1144c38b947fb68ca36d4abd05310cc29cdbb&quot;,&quot;__identity&quot;:&quot;d7a1237c-5473-4e60-9f18-53d2b2226351&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="92629e11-bda9-4bd9-abf3-72600f053da0" nodeName="node-hcaujrjgjd0k5">
+     <variant sortingIndex="200" workspace="live" nodeType="Neos.Neos:Shortcut" version="5" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:32:54+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:33:32+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:33:32+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">sitegeist-headquarters</uriPathSegment>
+       <targetMode __type="string">selectedTarget</targetMode>
+       <title __type="string">Sitegeist Headquarters</title>
+       <target __type="string">https://sitegeist.de</target>
+      </properties>
+     </variant>
+    </node>
+    <node identifier="3daa40c0-3421-4043-9d2f-6af51037d3a2" nodeName="node-prv025taz1en9">
+     <variant sortingIndex="175" workspace="live" nodeType="Vendor.Site:Document.ContentPage" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:35:30+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">impressum</uriPathSegment>
+       <footerText __type="string"></footerText>
+       <title __type="string">Impressum</title>
+      </properties>
+     </variant>
+     <node identifier="cd729255-e087-4311-c200-bf8cdf7017a2" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Neos.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:35:31+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="93d1bc14-526b-4f90-a4c3-f17213faa95c" nodeName="node-3m31fqupr5g0w">
+       <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.Image" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:35:42+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
+        <properties>
+         <image __type="object" __identifier="9f3e1694-6bee-4ec9-9d98-0031949d69ea" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;9f3e1694-6bee-4ec9-9d98-0031949d69ea&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;3e112419-18d7-48e1-aa14-9a304713c0c2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;sitegeist-jalag-1000x1282.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;hash&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;__identity&quot;:&quot;7a9e67f6-0044-486c-aed9-efc2d23eae0f&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:1000,&quot;position&quot;:10,&quot;width&quot;:1000,&quot;x&quot;:0,&quot;y&quot;:149,&quot;__identity&quot;:&quot;433ff612-f5a1-4682-95ce-730b831dd09a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="33989d75-6a7e-475a-9677-3c60b676e1b7" nodeName="node-ipwli17g2xloi">
+       <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.Text" version="32" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:37:59+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;h2&gt;sitegeist media solutions GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;br&gt;&lt;br&gt;Telefon: 040 - 32 81 93 - 0&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:info@sitegeist.de&quot;&gt;info@sitegeist.de&lt;/a&gt;&lt;br&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;sitegeist tourismus solutions GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;br&gt;&lt;br&gt;Telefon: 040 - 32 81 93 - 0&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:tourismus@sitegeist.de&quot;&gt;tourismus@sitegeist.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;sitegeist portal solutions GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;br&gt;&lt;br&gt;Telefon: 040 - 32 81 93 - 0&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:portal@sitegeist.de&quot;&gt;portal@sitegeist.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;sitegeist neos solutions GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;/p&gt;&lt;p&gt;Telefon: 040 - 32 81 93 - 0&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:neos@sitegeist.de&quot;&gt;neos@sitegeist.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;sitegeist eCommerce solutions GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;/p&gt;&lt;p&gt;Telefon: 040 - 32 81 93 - 0&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:ecommerce@sitegeist.de&quot;&gt;ecommerce@sitegeist.de&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;h2&gt;sitegeist agile transformation GmbH&lt;/h2&gt;&lt;p&gt;Poßmoorweg 2&lt;br&gt;22301 Hamburg&lt;/p&gt;&lt;p&gt;Telefon: 040 - 32 81 93 - 0&lt;br&gt;Fax: 040 - 32 81 93-11&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;mailto:neos@sitegeist.de&quot;&gt;agile@sitegeist.de&lt;/a&gt;&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="e83d4b19-4b58-47a2-b9cf-5d2121a26967" nodeName="node-ucdwndzfhm6o0">
+       <variant sortingIndex="50" workspace="live" nodeType="Vendor.Site:Content.Text" version="10" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:36:27+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;h1&gt;Impressum&lt;/h1&gt;&lt;p&gt;&lt;i&gt;Angaben gemäß § 5 TMG&lt;/i&gt;&lt;/p&gt;</text>
         </properties>
        </variant>
       </node>

@@ -1,0 +1,14 @@
+'Vendor.Site:Document.LandingPage':
+  superTypes:
+    'Vendor.Site:Document.Page': true
+  ui:
+    icon: file
+    label: Landing Page
+  childNodes:
+    main:
+      constraints:
+        nodeTypes:
+          'Vendor.Site:Content.HeroStage': true
+          'Vendor.Site:Content.ProductStage': true
+          'Vendor.Site:Content.ParallaxStage': true
+          'Vendor.Site:Content.FaqStage': true

@@ -13,15 +13,17 @@ function HeroStage(props) {
 				justifyContent="center"
 				alignItems="center"
 				>
-				<Text
-					p={4}
-					fontSize={6}
-					sx={{
-						color: 'white',
-						backgroundColor: 'rgba(0, 0, 0, .5)'
-					}}
-					dangerouslySetInnerHTML={{ __html: props.text }}
-					/>
+				{props.text && (
+					<Text
+						p={4}
+						fontSize={6}
+						sx={{
+							color: 'white',
+							backgroundColor: 'rgba(0, 0, 0, .5)'
+						}}
+						dangerouslySetInnerHTML={{ __html: props.text }}
+						/>
+				)}
 			</Flex>
 		</Box>
 	);

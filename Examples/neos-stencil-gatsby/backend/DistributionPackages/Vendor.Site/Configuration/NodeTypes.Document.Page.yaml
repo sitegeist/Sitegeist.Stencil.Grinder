@@ -1,15 +1,13 @@
 'Vendor.Site:Document.Page':
+  abstract: true
   superTypes:
     'Vendor.Site:Document': true
-
-  ui:
-    icon: fas fa-file
-    label: i18n
 
   constraints:
     nodeTypes:
       '*': false
       'Neos.Neos:Document': false
+      'Vendor.Site:Document.HomePage': false
       'Neos.Neos:Shortcut': true
       'Vendor.Site:Document': true
   childNodes:
@@ -18,7 +16,6 @@
       constraints:
         nodeTypes:
           '*': false
-          'Vendor.Site:Content': true
   properties:
     footerText:
       type: string
