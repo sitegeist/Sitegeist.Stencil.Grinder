@@ -15,7 +15,8 @@ export default function SiteHeader() {
 						left: 0,
 						width: '100%',
 						backgroundColor: isSticky ? '#222' : 'transparent',
-						transition: 'background-color .5s'
+						transition: 'background-color .5s',
+						zIndex: 100
 					}}
 				>
 					<Flex width={1200} height="4em" mx="auto" alignItems="center">

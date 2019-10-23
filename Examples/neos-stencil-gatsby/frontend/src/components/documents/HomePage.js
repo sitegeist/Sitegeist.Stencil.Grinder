@@ -1,17 +1,26 @@
 import React from "react";
 import { StickyContainer } from "react-sticky";
+import { Helmet } from "react-helmet";
 import { Grinder, register } from "@sitegeist/stencil-grinder-react";
 
-import { Heading } from "rebass";
-
 import SiteHeader from "../elements/SiteHeader";
+import SiteContent from "../elements/SiteContent";
+import SiteFooter from "../elements/SiteFooter";
 
 function HomePage(props) {
 	return (
-		<StickyContainer>
-			<SiteHeader/>
-			<Grinder data={props.main}/>
-		</StickyContainer>
+		<>
+			<Helmet>
+				<title>{props.title}</title>
+			</Helmet>
+			<StickyContainer>
+				<SiteHeader/>
+				<SiteContent>
+					<Grinder data={props.main}/>
+				</SiteContent>
+				<SiteFooter/>
+			</StickyContainer>
+		</>
 	);
 }
 
