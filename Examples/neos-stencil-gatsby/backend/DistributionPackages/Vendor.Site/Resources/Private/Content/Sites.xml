@@ -21,6 +21,57 @@
       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-22T18:13:56+00:00</lastModificationDateTime>
       <properties/>
      </variant>
+     <node identifier="28e03205-8a59-4c73-ae91-d1e3eaf21046" nodeName="node-0goe145ra5t1e">
+      <variant sortingIndex="200" workspace="live" nodeType="Vendor.Site:Content.ParallaxStage" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-23T08:04:57+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T08:20:45+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T08:20:45+00:00</lastPublicationDateTime>
+       <properties>
+        <image __type="object" __identifier="4fe4d80f-45cb-4093-a8e7-8cb486e3879e" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;4fe4d80f-45cb-4093-a8e7-8cb486e3879e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;abandoned-forest-hd-wallpaper-34950.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;b827788e9cdb9f0412fc13d7f8893679785b386c&quot;,&quot;hash&quot;:&quot;b827788e9cdb9f0412fc13d7f8893679785b386c&quot;,&quot;__identity&quot;:&quot;a60a50ac-5897-4d21-8b2f-4d113a66d656&quot;}}</image>
+       </properties>
+      </variant>
+      <node identifier="ce049bbf-225d-4718-9402-caa05889d330" nodeName="node-gl7qvtqho1ywc">
+       <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.ParallaxStage.Card" version="14" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T08:05:03+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T08:35:55+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T08:35:55+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;h2&gt;Create your Content in Neos&lt;/h2&gt;&lt;p&gt;Create websites on today's most innovative Content Application Platform. With Sitegeist.Stencil, a Structure mode for Neos, you edit nodes without any frontend.&lt;/p&gt;</text>
+         <image __type="object" __identifier="1f4e705b-a102-4f89-bac3-6d3dca0dab4e" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;1f4e705b-a102-4f89-bac3-6d3dca0dab4e&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Peek 2019-10-21 19-15.gif&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/gif&quot;,&quot;sha1&quot;:&quot;05ad2ce90b87b9c6552e90573dd1bfdb9508706c&quot;,&quot;hash&quot;:&quot;05ad2ce90b87b9c6552e90573dd1bfdb9508706c&quot;,&quot;__identity&quot;:&quot;475c66f6-a096-442d-8099-8b10b2d01f6f&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="5d68a6dd-58e1-4c6e-b478-ff4a2fc9f6e9" nodeName="node-o3r8igws79bx5">
+       <variant sortingIndex="200" workspace="live" nodeType="Vendor.Site:Content.ParallaxStage.Card" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T08:31:27+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T08:36:52+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T08:36:52+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;h2&gt;Build your site with Gatsby&lt;/h2&gt;&lt;p&gt;Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.&amp;nbsp;&lt;/p&gt;</text>
+         <image __type="object" __identifier="bea25537-22d0-4ff1-a491-8f137f5cc730" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;bea25537-22d0-4ff1-a491-8f137f5cc730&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;Peek 2019-10-21 19-14.gif&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/gif&quot;,&quot;sha1&quot;:&quot;da857fb4a15ac7c3eec7372c23b43afa993ba401&quot;,&quot;hash&quot;:&quot;da857fb4a15ac7c3eec7372c23b43afa993ba401&quot;,&quot;__identity&quot;:&quot;5f85bfb3-cfe0-4509-bf79-b26b33e55b10&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="44b8fb44-558d-44c0-a538-785c38bf9924" nodeName="node-yewfz9kbyhrll">
+       <variant sortingIndex="250" workspace="live" nodeType="Vendor.Site:Content.ParallaxStage.Card" version="14" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T08:39:07+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T08:40:12+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T08:40:12+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;h2&gt;Deploy Anywhere&lt;/h2&gt;&lt;p&gt;Gatsby.js is Internet Scale. Forget complicated deploys with databases and servers and their expensive, time-consuming setup costs, maintenance, and scaling fears. Gatsby.js builds your site as “static” files which can be deployed easily on dozens of services.&lt;/p&gt;</text>
+         <image __type="object" __identifier="c42d6e80-ca40-43f6-8cb4-e8a8ec562941" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;c42d6e80-ca40-43f6-8cb4-e8a8ec562941&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;source.gif&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/gif&quot;,&quot;sha1&quot;:&quot;379a3bf75f883c394c5482eab6359388bf953a44&quot;,&quot;hash&quot;:&quot;379a3bf75f883c394c5482eab6359388bf953a44&quot;,&quot;__identity&quot;:&quot;76c00ea3-6c0c-4026-b214-a79a2ccac6c4&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+     </node>
      <node identifier="94537609-f178-45af-939a-5348bf31c283" nodeName="node-fz8u1k7f8hb32">
       <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.ProductStage" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
@@ -82,6 +133,83 @@
         <image __type="object" __identifier="caf01ed5-07e5-4bf4-8aba-6c8791d7e854" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;caf01ed5-07e5-4bf4-8aba-6c8791d7e854&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;architecture-buildings-city-220444.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;80bbfc6f8aef5a5bd1e32fbcf5692ec9404a1bbb&quot;,&quot;hash&quot;:&quot;80bbfc6f8aef5a5bd1e32fbcf5692ec9404a1bbb&quot;,&quot;__identity&quot;:&quot;2c9d8422-42e9-46a6-adc1-b25aed0f3be2&quot;}}</image>
        </properties>
       </variant>
+     </node>
+     <node identifier="a82921db-e195-4bb1-9cb5-81b6b58a58f0" nodeName="node-qykwx565tthgq">
+      <variant sortingIndex="250" workspace="live" nodeType="Vendor.Site:Content.FaqStage" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:00:23+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:12:52+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:12:52+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">&lt;h2&gt;Frequently Asked Questions&lt;/h2&gt;</title>
+       </properties>
+      </variant>
+      <node identifier="0b4454d2-5526-4d02-bd1a-9b70a28c6ff5" nodeName="node-avy7hvsf3tje6">
+       <variant sortingIndex="350" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="7" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:14:00+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:14:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:14:23+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h3&gt;Wenn ja, warum nicht?&lt;/h3&gt;</title>
+         <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="a7b9b8f4-f8ca-4ef7-a21c-b077393d49c6" nodeName="node-czfweqghg7u7g">
+       <variant sortingIndex="300" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="7" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:00+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h3&gt;Ist das auch dynamisch und flexibel?&lt;/h3&gt;</title>
+         <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="05cd2858-0c1d-4cd4-adb2-2924f8401304" nodeName="node-r9ilv0pcenmz5">
+       <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="8" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:01:58+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h3&gt;Was wäre so 'ne grobe Hausnummer?&lt;/h3&gt;</title>
+         <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="4191b9c2-c179-47d9-a516-5af7514d5d5d" nodeName="node-y77m1j4kom10m">
+       <variant sortingIndex="250" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:02:30+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h3&gt;Geht das auch im IE11?&lt;/h3&gt;</title>
+         <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="209b866c-f031-4a13-9495-d1bdefebf4d1" nodeName="node-yo3psri4pw4mo">
+       <variant sortingIndex="100" workspace="live" nodeType="Vendor.Site:Content.FaqStage.Item" version="9" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2019-10-23T09:00:45+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T09:04:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h3&gt;Kann man schon was sehen?&lt;/h3&gt;</title>
+         <text __type="string">&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
      </node>
     </node>
    </node>
