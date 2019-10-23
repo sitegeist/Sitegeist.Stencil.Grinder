@@ -30,7 +30,13 @@ export default function Navigation(props) {
 			<ul>
 				{props.items.map(item => (
 					<li>
-						<a href={item.href}>{item.label}</a>
+						<a
+							href={item.href}
+							target={item.target}
+							rel={item.target === '_blank' ? 'noopener noreferrer' : undefined}
+							>
+							{item.label}
+						</a>
 					</li>
 				))}
 			</ul>

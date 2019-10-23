@@ -14,7 +14,7 @@ function LandingPage(props) {
 				<title>{props.title}</title>
 			</Helmet>
 			<StickyContainer>
-				<SiteHeader/>
+				<SiteHeader navigation={props.navigation}/>
 				<SiteContent>
 					<Grinder data={props.main}/>
 				</SiteContent>

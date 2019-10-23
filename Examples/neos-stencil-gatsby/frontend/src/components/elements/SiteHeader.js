@@ -6,14 +6,17 @@ import { IoIosMenu } from "react-icons/io";
 import Drawer from "./Drawer";
 import Navigation from "./Navigation";
 
-export default function SiteHeader() {
+export default function SiteHeader(props) {
 	const [open, setOpen] = useState(false);
 
 	return (
 		<>
 			<Drawer width={200} open={open} setOpen={setOpen}>
 				<Navigation
-					items={[{ href: '/', label: 'Home' }]}
+					items={[
+						{ href: '/', label: 'Home' },
+						...props.navigation
+					]}
 				/>
 			</Drawer>
 			<Sticky topOffset={20} disableCompensation>
@@ -26,7 +29,7 @@ export default function SiteHeader() {
 							top: 0,
 							left: 0,
 							width: '100%',
-							backgroundColor: isSticky ? '#222' : 'transparent',
+							backgroundColor: isSticky || props.static ? '#222' : 'transparent',
 							transition: 'background-color .5s',
 							zIndex: 100
 						}}

@@ -6,3 +6,22 @@ prototype(Sitegeist.Stencil.Grinder:DefaultProperties) {
         }
     }
 }
+
+prototype(Sitegeist.Stencil.Grinder:DefaultContent) {
+    renderer.props {
+        navigation = Neos.Fusion:Map {
+            @if.isPage = ${q(props.node).is('[instanceof Vendor.Site:Document.Page]')}
+
+            items = ${q(site).children('[instanceof Neos.Neos:Document]').get()}
+            itemRenderer = Neos.Fusion:DataStructure {
+                href = ${'node://' + item.identifier}
+                href.@process.convert = Neos.Neos:ConvertUris
+
+                target = '_blank'
+                target.@if.isExternal = ${String.startsWith(this.href, 'http')}
+
+                label = ${q(item).property('title')}
+            }
+        }
+    }
+}
