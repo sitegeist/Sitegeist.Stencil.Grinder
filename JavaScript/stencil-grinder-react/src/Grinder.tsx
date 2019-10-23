@@ -17,7 +17,10 @@ import { get } from "./register";
 type GrinderData = GrinderResponse | { key: any, [key: string]: any } | object | number | string | null;
 
 interface GrinderProps {
-	data: GrinderData | GrinderData[]
+	data: GrinderData | GrinderData[],
+	index?: number
+	defaultProps?: object
+	props?: object
 }
 
 /**
@@ -32,7 +35,13 @@ export default function Grinder(props: GrinderProps): JSX.Element | null {
 				{props.data.map((item, index) => {
 					if (item !== null && typeof item === 'object') {
 						return (
-							<Grinder key={'key' in item ? item.key : index} data={item} />
+							<Grinder
+								key={'key' in item ? item.key : index}
+								index={index}
+								data={item}
+								defaultProps={props.defaultProps}
+								props={props.props}
+								/>
 						);
 					}
 
@@ -59,7 +68,18 @@ export default function Grinder(props: GrinderProps): JSX.Element | null {
 				const Component = get(props.data.payload.component);
 
 				if (Component) {
-					return (<Component {...props.data.payload.props} />);
+					return (
+						<Component
+							{...props.defaultProps}
+							{...props.data.payload.props}
+							{...props.props}
+							grinder={{
+								data: props.data,
+								component: props.data.payload.component,
+								index: props.index
+							}}
+							/>
+					);
 				}
 
 				throw new Error(`[Grinder]: Could not find component: ${props.data.payload.component}`);
@@ -74,7 +94,7 @@ export default function Grinder(props: GrinderProps): JSX.Element | null {
 	}
 
 	if (typeof props.data === 'number') {
-		return (<>props.data</>);
+		return (<>{props.data}</>);
 	}
 
 	if (props.data === null) {
