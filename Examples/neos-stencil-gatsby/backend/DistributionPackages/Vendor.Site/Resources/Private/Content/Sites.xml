@@ -215,16 +215,16 @@
      </node>
     </node>
     <node identifier="f336472a-12cf-4d8b-8f91-4c1321ea8052" nodeName="node-9uf50yirhd22u">
-     <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Document.LandingPage" version="4" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="150" workspace="live" nodeType="Vendor.Site:Document.LandingPage" version="5" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:01+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-24T08:28:36+00:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:34:36+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">f-a-q</uriPathSegment>
-       <footerText __type="string"></footerText>
        <title __type="string">F. A. Q.</title>
+       <footerText __type="string"></footerText>
       </properties>
      </variant>
      <node identifier="55cdd573-2a34-f427-a6c6-097c18cd8d6e" nodeName="main">
@@ -314,15 +314,15 @@
        </node>
       </node>
       <node identifier="9d902792-9b8d-4586-8a93-d6a68b45cfcd" nodeName="node-kugm2aohip9fd">
-       <variant sortingIndex="125" workspace="live" nodeType="Vendor.Site:Content.HeroStage" version="4" removed="" hidden="" hiddenInIndex="">
+       <variant sortingIndex="125" workspace="live" nodeType="Vendor.Site:Content.HeroStage" version="5" removed="" hidden="" hiddenInIndex="">
         <dimensions/>
         <accessRoles __type="array"/>
         <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:11+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:40+00:00</lastModificationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2019-10-24T08:28:36+00:00</lastModificationDateTime>
         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:58:40+00:00</lastPublicationDateTime>
         <properties>
-         <text __type="string"></text>
          <image __type="object" __identifier="ff550d74-5597-4a2b-879c-9c1271d37b13" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;ff550d74-5597-4a2b-879c-9c1271d37b13&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;ask-blackboard-356079.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;2ba1144c38b947fb68ca36d4abd05310cc29cdbb&quot;,&quot;hash&quot;:&quot;2ba1144c38b947fb68ca36d4abd05310cc29cdbb&quot;,&quot;__identity&quot;:&quot;d7a1237c-5473-4e60-9f18-53d2b2226351&quot;}}</image>
+         <text __type="string"></text>
         </properties>
        </variant>
       </node>
@@ -344,16 +344,16 @@
      </variant>
     </node>
     <node identifier="3daa40c0-3421-4043-9d2f-6af51037d3a2" nodeName="node-prv025taz1en9">
-     <variant sortingIndex="175" workspace="live" nodeType="Vendor.Site:Document.ContentPage" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="175" workspace="live" nodeType="Vendor.Site:Document.ContentPage" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2019-10-23T16:35:30+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastModificationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2019-10-24T08:28:36+00:00</lastModificationDateTime>
       <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T16:40:52+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">impressum</uriPathSegment>
-       <footerText __type="string"></footerText>
        <title __type="string">Impressum</title>
+       <footerText __type="string"></footerText>
       </properties>
      </variant>
      <node identifier="cd729255-e087-4311-c200-bf8cdf7017a2" nodeName="main">
@@ -373,7 +373,7 @@
         <lastModificationDateTime __type="object" __classname="DateTime">2019-10-23T17:35:59+00:00</lastModificationDateTime>
         <lastPublicationDateTime __type="object" __classname="DateTime">2019-10-23T17:35:59+00:00</lastPublicationDateTime>
         <properties>
-         <image __type="object" __identifier="fa4b7e7d-e9f5-43b7-a85b-6037cda8a47d" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;fa4b7e7d-e9f5-43b7-a85b-6037cda8a47d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;3e112419-18d7-48e1-aa14-9a304713c0c2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;sitegeist-jalag-1000x1282.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;hash&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;__identity&quot;:&quot;7a9e67f6-0044-486c-aed9-efc2d23eae0f&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:562,&quot;position&quot;:10,&quot;width&quot;:1000,&quot;x&quot;:0,&quot;y&quot;:529,&quot;__identity&quot;:&quot;0fcaeade-ff41-48f9-beb1-8e7f021ef4dc&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
+         <image __type="object" __identifier="fa4b7e7d-e9f5-43b7-a85b-6037cda8a47d" __classname="Neos\Media\Domain\Model\ImageVariant" __encoding="json">{&quot;__identity&quot;:&quot;fa4b7e7d-e9f5-43b7-a85b-6037cda8a47d&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\ImageVariant&quot;,&quot;originalAsset&quot;:{&quot;__identity&quot;:&quot;3e112419-18d7-48e1-aa14-9a304713c0c2&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;sitegeist-jalag-1000x1282.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;hash&quot;:&quot;67ab607b5924a741ad66baa8d2ad312a4e50889b&quot;,&quot;__identity&quot;:&quot;7a9e67f6-0044-486c-aed9-efc2d23eae0f&quot;}},&quot;adjustments&quot;:[{&quot;aspectRatio&quot;:null,&quot;height&quot;:562,&quot;position&quot;:10,&quot;width&quot;:1000,&quot;x&quot;:0,&quot;y&quot;:529,&quot;__identity&quot;:&quot;cf6e8363-9be3-4fca-852e-f455857b412b&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Adjustment\\CropImageAdjustment&quot;}]}</image>
         </properties>
        </variant>
       </node>
