@@ -101,5 +101,7 @@ export default function Grinder(props: GrinderProps): JSX.Element | null {
 		return null;
 	}
 
+	console.log(props.data);
+
 	throw new Error(`[Grinder]: Could not unravel data structure: ${JSON.stringify(props.data)}.`);
 }

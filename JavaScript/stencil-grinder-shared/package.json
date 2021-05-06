@@ -4,9 +4,9 @@
   "scripts": {
     "build": "tsc --build tsconfig.json"
   },
-  "peerDependencies": {},
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
 }

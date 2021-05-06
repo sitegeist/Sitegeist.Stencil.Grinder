@@ -56,7 +56,7 @@ services:
       - ../..:/project/lib
 
   frontend:
-    image: node:10
+    image: node:12
     working_dir: /project/Examples/neos-stencil-gatsby/frontend
     user: ${HOST_USER}:82
     command: sh -c 'yarn serve'
