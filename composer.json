@@ -4,7 +4,7 @@
     "type": "neos-package",
     "name": "sitegeist/stencil-grinder",
     "require": {
-        "neos/neos": "^4.3 || ^5.0 || dev-master"
+        "neos/neos": "^4.3 || ^5.0 || ^7.0 || ^8.0 || dev-master"
     },
     "license": "GPL-3.0-or-later",
     "autoload": {
